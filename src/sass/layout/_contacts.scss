@@ -1,7 +1,41 @@
+.contacts {
+    padding: 40px 20px;
+    background-color: var(--dark-text-color);
+}
 .contacts__header {
     text-align: center;
+    font-size: var(--basic-font-size-tablet);
+    letter-spacing: var(--headers-letter-spacing);
+    color: var(--body-background-color);
 }
-
+.contacts__header-accent {
+    color: var(--accent-color);
+}
+.contacts__text-container {
+    margin-bottom: 24px;
+}
 .contacts__form-container {
     text-align: center;
+    color: var(--body-background-color);
+}
+.contacts__form-header {
+    margin-bottom: 40px;
+    font-size: var(--basic-font-size-mobile);
+}
+.contacts__form-input {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+.contacts__form-button {
+    display: block;
+}
+@media screen and (min-width: 768px) {
+.contacts__text-container {
+        margin-bottom: 40px;
+    }
 }
