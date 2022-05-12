@@ -22,12 +22,16 @@
 
 @media screen and (min-width: 768px) {
     .container {
+        padding-left: 32px;
+        padding-right: 32px;
         width: 704px;
     }
 }
 
 @media screen and (min-width: 1366px) {
     .container {
+        padding-left: 16px;
+        padding-right: 16px;
         width: 1648px;
     }
 }
