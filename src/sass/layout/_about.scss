@@ -1,0 +1,45 @@
+.about{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+}
+
+.about__container{
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+.about__title{
+    margin-bottom: 20px;
+
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.30;
+    letter-spacing: var(--headers-letter-spacing);
+
+    color: var(--dark-text-color);
+}
+
+.about__subtitle{
+    margin-bottom: 28px;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: var(--text-letter-spacing);
+
+    color: var(--dark-text-color);
+}
+
+.about__items{
+    font-weight: 600;
+    font-size: var(--basic-font-size-tablet);
+    line-height: 17px;
+    letter-spacing: 0.06em;
+
+    color: var(--dark-text-color);
+}
+
+.about__items:not(:last-child){
+    margin-bottom: 20px;
+}

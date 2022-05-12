@@ -31,14 +31,7 @@ body {
     min-height: 100vh;
     scroll-behavior: smooth;
 
-    background-color: var(--body-background-color);
+    background-color: var(--main-body-background-color);
     font-family: var(--primary-font-family);
-    letter-spacing: var(--text-letter-spacing);
 }
-.list {
-    list-style: none;
-    padding: 0;
-}
-.link {
-    text-decoration: none;
-}
+
