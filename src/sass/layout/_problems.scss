@@ -7,8 +7,7 @@
 }
 
 .problems__title {
-margin-bottom: 24px; 
-max-width: 280px;   
+margin-bottom: 24px;    
 @include font(24px, 800, 31px);
 color: var(--body-background-color);
 }
