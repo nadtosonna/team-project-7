@@ -3,6 +3,9 @@
     background-color: var(--dark-text-color);
 }
 .contacts__header {
+    margin-bottom: 24px;
+    margin-right: auto;
+    margin-left: auto;
     text-align: center;
     font-size: var(--basic-font-size-tablet);
     letter-spacing: var(--headers-letter-spacing);
@@ -11,10 +14,9 @@
 .contacts__header-accent {
     color: var(--accent-color);
 }
-.contacts__text-container {
-    margin-bottom: 24px;
-}
+
 .contacts__form-container {
+    padding: 0;
     text-align: center;
     color: var(--body-background-color);
 }
@@ -24,15 +26,54 @@
 }
 .contacts__form-input {
     width: 100%;
+    padding: 16px 28px;
+    margin: 0;
+    background-color: var(--dark-text-color);
+    color: var(--body-background-color);
     align-items: center;
     justify-content: center;
+    border: 1px solid var(--body-background-color);
+    outline: none;
+    resize: none;
+    cursor: pointer;
+
+    &:focus-within {
+            outline: none;
+            border: 1px solid var(--accent-color);
+        }
 
     &:not(:last-child) {
         margin-bottom: 20px;
     }
+
+    @media screen and (min-width: 768px) {
+        max-width: 336px;
+    }
+    @media screen and (min-width: 1366px) {
+        max-width: 528px;
+    }
+}
+::placeholder {
+    color: var(--body-background-color);
+    font-size: var(--basic-font-size-tablet);
 }
 .contacts__form-button {
-    display: block;
+    margin-top: 40px;
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    min-height: 48px;
+    background-color: var(--accent-color);
+    color: var(--body-background-color);
+    letter-spacing: var(--button-letter-spacing);
+    text-transform: uppercase;
+    border: 1px solid var(--accent-color);
+    @include font (14px, 700, 17px);
+    cursor: pointer;
+
+    @media screen and (min-width: 320px) {
+        min-width: 280px;
+    }
 }
 @media screen and (min-width: 768px) {
 .contacts__text-container {
