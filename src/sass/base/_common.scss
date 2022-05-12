@@ -35,3 +35,10 @@ body {
     font-family: var(--primary-font-family);
     letter-spacing: var(--text-letter-spacing);
 }
+.list {
+    list-style: none;
+    padding: 0;
+}
+.link {
+    text-decoration: none;
+}
