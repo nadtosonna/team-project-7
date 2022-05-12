@@ -1,0 +1,47 @@
+.problems {
+    padding: 24px 0;
+    background-image: linear-gradient(to bottom,
+    var(--dark-text-color) 72%,
+    var(--body-background-color) 28%
+    );
+}
+
+.problems__title {
+margin-bottom: 24px;    
+@include font(24px, 800, 31px);
+color: var(--body-background-color);
+}
+
+.problems__list {
+    counter-reset: problems__item;
+
+    padding: 20px 12px 24px 32px;
+    background-color: var(--body-background-color);
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+}
+
+
+.problems__item{
+    position: relative;
+@include font(14px, 700, 24px);
+
+&::before {
+    counter-increment: problems__item;
+    content:"\2501"" 0" counter(problems__item);
+    color: var(--accent-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-70%);
+  }    
+} 
+
+.problems__item:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+
+
+.problems__span {
+    color: var(--accent-color);
+}
