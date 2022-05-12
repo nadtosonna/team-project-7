@@ -1,0 +1,23 @@
+// .advantages__list {
+//     gap: 24px;
+// }
+
+// .advantages__item::before {
+// display: inline-block;
+// content: " ";
+// // background-image: url('../images/advantages/female-student-mobile.svg');
+// background-color: red;
+// // background-image: url(../../images/demo.jpg);
+// width: 59px;
+// height: 60px;
+// }
+
+.advantages__item:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.advantages__title {
+    font-size: 14px;
+    line-height: 1.64; 
+    color: var(--dark-text-color);
+}
