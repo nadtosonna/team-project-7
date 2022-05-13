@@ -4,42 +4,96 @@
     
 }
 
-.about__container{
-    padding-left: 20px;
-    padding-right: 20px;
-    
-}
-
 .about__title{
     margin-bottom: 20px;
-
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 1.30;
-    letter-spacing: var(--headers-letter-spacing);
+    @include font(20px, 800, 26px);
+    letter-spacing: 0.03em;
 
     color: var(--dark-text-color);
+}
+
+.about__block{
+    padding-top: 20px;
 }
 
 .about__subtitle{
+    position: relative;
     margin-bottom: 28px;
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: var(--text-letter-spacing);
+
+    @include font(20px, 800, 24px);
+    letter-spacing: 0.08em;
 
     color: var(--dark-text-color);
+
+    &::after{
+        position: absolute;
+        display: block;
+        bottom: -8px;
+
+        width: 100%;
+        height: 1px;
+
+        content: "";
+        background: var(--grey-text-color);
+    }
+}
+
+.about__list{
+    position: relative;
+    margin-bottom: 61px;
+
+    &::after{
+        position: absolute;
+        display: block;
+        bottom: -38px;
+
+        width: 27px;
+        height: 3px;
+
+        content: "";
+        background: var(--accent-color);
+    }
 }
 
 .about__items{
-    font-weight: 600;
-    font-size: var(--basic-font-size-tablet);
-    line-height: 17px;
+    position: relative;
+    padding-left: 27px;
+
+    @include font(14px, 600, 17px);
     letter-spacing: 0.06em;
 
     color: var(--dark-text-color);
+
+    &::before{
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 17px;
+        height: 14px;
+    
+        content: " ";
+        background-image: url('../images/check-mark.svg');
+    }
+
+    &:not(:last-child){
+        margin-bottom: 20px;
+    }
 }
 
-.about__items:not(:last-child){
-    margin-bottom: 20px;
+.about__text{
+    margin-bottom: 8px;
+}
+
+.about__description{
+    @include font(12px, 500, 20px);
+
+    color: var(--grey-text-color);
+}
+
+.about__link{
+    @include font(12px, 500, 20px);
+
+    color: var(--accent-color);
+    text-decoration: underline;
 }

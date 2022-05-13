@@ -1,47 +1,109 @@
 
 .problems {
-    padding: 24px 20px 40px;
+    padding: 24px 0;
     background-image: linear-gradient(to bottom,
-    var(--dark-text-color) 72%,
-    var(--body-background-color) 28%
+    var(--dark-body-background-color) 72%,
+    var(--main-body-background-color) 28%
     );
+    @media screen and (min-width: 768px) {
+        padding: 40px 0;
+    }
+    @media screen and (min-width: 1680px) {
+      /*  background-image:url('../../images/Group1.svg'),
+        linear-gradient(to bottom,
+        var(--dark-body-background-color) 72%,
+        var(--main-body-background-color) 28%
+        );*/
+        padding: 80px 0;
+       
+    }
 }
 
 .problems__title {
 margin-bottom: 24px;    
 @include font(24px, 800, 31px);
-color: var(--body-background-color);
+color: var(--white-text-color);
+
+@media screen and (min-width: 768px) { 
+    margin-bottom: 25px;
+   }
+
+@media screen and (min-width: 1680px) {
+    @include font(46px, 800, 60px);
+    margin-bottom: 80px;
+}
 }
 
 .problems__list {
     counter-reset: problems__item;
     padding: 49px 23px 24px 32px;
-    background-color: var(--body-background-color);
+    background-color: var(--main-body-background-color);
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+
+    @media screen and (min-width: 768px){
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px; 
+    } 
+    
+    @media screen and (min-width: 1680px) {
+        padding: 60px 192px 60px 140px;
+        gap: 85px;
+    }
 }
 
 
 .problems__item{
     position: relative;
-@include font(14px, 700, 24px);
+    
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 24px) / 2);
+        max-width: 236px;   
+      }
 
-&::before {
+    @media screen and (min-width: 1680px) {
+        flex-basis: calc((100% - 170px) / 3);
+        max-width: 336px;
+    }
+
+
+
+ &::before {
     counter-increment: problems__item;
     content:"\2501"" 0" counter(problems__item);
     color: var(--accent-color);
     position: absolute;
-    top: 0;
+    top: -5px;
     left: 0;
-    transform: translateY(-70%);
-  }    
+    transform: translateY(-50%);
+    @include font(14px, 700, 17px); 
+
+    @media screen and (min-width: 768px) {
+        top: -4px;
+    }
+
+    @media screen and (min-width: 1680px) {
+    @include font(20px, 700, 33px);
+    top: -8px;
+    }
+ }
+ 
 } 
 
+@media screen and (max-width: 767px){
 .problems__item:not(:last-child) {
     margin-bottom: 45px;
 }
-
+}
 
 
 .problems__span {
     color: var(--accent-color);
+}
+
+.problems__text {
+    @include font(14px, 700, 24px);
+    @media screen and (min-width: 1680px) {
+        @include font(20px, 700, 28px);
+      }
 }
