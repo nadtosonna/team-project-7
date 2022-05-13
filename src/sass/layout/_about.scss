@@ -97,3 +97,32 @@
     color: var(--accent-color);
     text-decoration: underline;
 }
+
+@media screen and (min-width:768px){
+    .about__wrapper {
+        display: flex;       
+    }
+
+    .about__block{
+        width: 402px;
+        margin-left: 60px;
+        padding-top: 0;
+    }
+
+    .about__title{
+        @include font(26px, 800, 34px);
+    }
+
+    .about__items{
+        @include font(12px, 500, 16px);
+    }
+
+    .about__description{
+        @include font(10px, 500, 20px);
+    }
+
+    .about__text{
+        margin-bottom: 24px;
+    }
+
+}
