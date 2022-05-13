@@ -2,21 +2,21 @@
 .problems {
     padding: 24px 20px 40px;
     background-image: linear-gradient(to bottom,
-    var(--dark-text-color) 72%,
-    var(--body-background-color) 28%
+    var(--dark-body-background-color) 72%,
+    var(--main-body-background-color) 28%
     );
 }
 
 .problems__title {
 margin-bottom: 24px;    
 @include font(24px, 800, 31px);
-color: var(--body-background-color);
+color: var(--white-text-color);
 }
 
 .problems__list {
     counter-reset: problems__item;
     padding: 49px 23px 24px 32px;
-    background-color: var(--body-background-color);
+    background-color: var(--main-body-background-color);
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 }
 
