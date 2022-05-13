@@ -22,7 +22,7 @@
 .problems__title {
 margin-bottom: 24px;    
 @include font(24px, 800, 31px);
-color: var(--main-body-background-color);
+color: var(--white-text-color);
 
 @media screen and (min-width: 768px) { 
     margin-bottom: 25px;

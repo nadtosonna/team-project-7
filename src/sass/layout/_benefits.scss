@@ -1,21 +1,22 @@
 .benefits {
     padding: 24px 40px;
-    background-image: linear-gradient(to bottom,
+    background-image: linear-gradient( to bottom,
     var(--dark-text-color) 72%,
-    var(--body-background-color) 28%
+    var(--white-text-color) 28%
     );
+  //  background-color: aqua;
 }
 
 .benefits__title {
 margin-bottom: 32px;    
 @include font(20px, 800, 27px);
-color: var(--body-background-color);
+color: var(--white-text-color);
 }
 
 .benefits__list {
     counter-reset: benefits__item;
     padding: 51px 20px 20px;
-    background-color: var(--body-background-color);
+    background-color: var(--main-body-background-color);
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 }
 
@@ -34,6 +35,8 @@ color: var(--body-background-color);
     transform: translateY(-100%);
   }    
 } 
+
+
 
 .benefits__item:not(:last-child) {
     margin-bottom: 71px;
