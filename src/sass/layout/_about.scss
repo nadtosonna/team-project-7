@@ -40,14 +40,14 @@
 
 .about__list{
     position: relative;
-    margin-bottom: 61px;
+    margin-bottom: 70px;
 
     &::after{
         position: absolute;
         display: block;
         bottom: -38px;
 
-        width: 27px;
+        width: 20px;
         height: 3px;
 
         content: "";
@@ -104,17 +104,32 @@
     }
 
     .about__block{
-        width: 402px;
+        max-width: 436px;
         margin-left: 60px;
         padding-top: 0;
     }
 
     .about__title{
+        margin-bottom: 40px;
         @include font(26px, 800, 34px);
+    }
+
+    .about__list{
+        margin-bottom: 74.5px;
+
+        &::after{
+            bottom: -55px;
+            
+            content: "";
+        }
     }
 
     .about__items{
         @include font(12px, 500, 16px);
+
+        &:not(:last-child){
+            margin-bottom: 30px;
+        }
     }
 
     .about__description{
@@ -122,7 +137,84 @@
     }
 
     .about__text{
-        margin-bottom: 24px;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media screen and (min-width:1680px){
+    .about{
+        padding-top: 83px;
+        padding-bottom: 117px;
+    }
+
+    .about__block{
+        max-width: 668px;
+        margin-left: 172px;
+    }
+
+    .about__title{
+        margin-bottom: 80px;
+        @include font(46px, 800, 60px);
+    }
+
+    .about__block{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about__subtitle{
+        margin-bottom: 48px;
+        @include font(30px, 800, 37px);
+
+        &::after{
+            bottom: -16px;
+        }
+    }
+
+    .about__list{
+        margin-bottom: 0;
+    
+        &::after{
+            width: 24.41px;
+    
+            content: "";
+        }
+    }
+
+    .about__items{
+        padding-left: 59px;
+        @include font(16px, 600, 20px);
+
+        &::before{
+            width: 24.41px;
+            height: 20px;
+        
+            content: " ";
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    
+        &:not(:last-child){
+            margin-bottom: 32px;
+        }
+    }
+
+    .about__text{
+        margin-top: auto;
+        // margin-bottom: 45px;
+    }
+
+    .about__description{
+        @include font(18px, 500, 28px);
+
+        &:not(:last-child){
+            margin-bottom: 20px;
+        }
+    }
+
+    .about__link{
+        @include font(18px, 500, 28px);
     }
 
 }
