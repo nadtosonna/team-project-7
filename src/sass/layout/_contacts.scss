@@ -1,7 +1,35 @@
 .contacts {
     padding: 40px 0;
     background-color: var(--dark-body-background-color);
-    // background-image: url('../images/registration-bg-img/registration-bg-img@1x-mobile.jpeg');
+    background-image: linear-gradient(to right, rgba(17, 21, 24, 0.8), rgba(17, 21, 24, 0.8)), url('../images/registration-bg-img/registration-bg-img@1x-mobile.jpg');
+    background-size: cover;
+    background-position: center;
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right, rgba(17, 21, 24, 0.8), rgba(17, 21, 24, 0.8)), url('../images/registration-bg-img/registration-bg-img@2x-mobile.jpg');
+        }
+
+    @media screen and (min-width:768px) {
+        background-image: linear-gradient(to right, rgba(17, 21, 24, 0.8), rgba(17, 21, 24, 0.8)), url('../images/registration-bg-img/registration-bg-img@1x-tablet.jpg');
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(to right, rgba(17, 21, 24, 0.8), rgba(17, 21, 24, 0.8)), url('../images/registration-bg-img/registration-bg-img@2x-tablet.jpg');
+            }
+        }
+
+    @media screen and (min-width:1366px) {
+        background-image: linear-gradient(to right, rgba(17, 21, 24, 0.8), rgba(17, 21, 24, 0.8)), url('../images/registration-bg-img/registration-bg-img@1x-desktop.jpg');
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(to right, rgba(17, 21, 24, 0.8), rgba(17, 21, 24, 0.8)), url('../images/registration-bg-img/registration-bg-img@2x-desktop.jpg');
+            }
+    }
 }
 .contacts__header {
     margin-bottom: 24px;
@@ -26,7 +54,7 @@
     width: 100%;
     padding: 16px 28px;
     margin: 0;
-    background-color: var(--dark-body-background-color);
+    background-color: inherit;
     color: var(--body-background-color);
     align-items: center;
     justify-content: center;
@@ -52,6 +80,12 @@
     color: var(--white-text-color);
     @include font (14px, 600, 17px);
 }
+.contacts__form-input:not(:placeholder-shown):required:valid {
+    border-color: var(--accent-color);
+}
+.contacts__form-input:not(:placeholder-shown):required:invalid {
+    border-color: var(--error-message-color);
+}
 .contacts__form-input:not(:last-child) {
     margin-bottom: 20px;
 }
@@ -66,11 +100,18 @@
     color: var(--white-text-color);
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    border: 1px solid var(--accent-color);
+    border: none;
     @include font (14px, 700, 17px);
     cursor: pointer;
 
     @media screen and (min-width: 480px) {
         min-width: 280px;
+    }
+}
+@media screen and (min-width:768px) {
+    .contacts__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
