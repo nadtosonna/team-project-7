@@ -19,7 +19,7 @@
         stroke: #000000;
      }
      .modal-menu {
-        //  display: none;
+         display: none;
          
          position: fixed;
          background-color: rgba(17, 21, 24, 0.9);
@@ -43,3 +43,8 @@
             // justify-content: center;
      }
      
+     .is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
