@@ -1,16 +1,27 @@
 .benefits {
-    padding: 24px 40px;
+    padding: 24px 0;
     background-image: linear-gradient( to bottom,
     var(--dark-text-color) 72%,
     var(--white-text-color) 28%
     );
-  //  background-color: aqua;
+    @media screen and (min-width: 1680px) {
+      padding: 0;
+    }
 }
 
 .benefits__title {
 margin-bottom: 32px;    
 @include font(20px, 800, 27px);
 color: var(--white-text-color);
+
+@media screen and(min-width: 768px) {
+  text-align: center;
+  @include font(26px, 800, 34px);
+}
+
+@media screen and (min-width: 1680px) {
+  display: none;
+}
 }
 
 .benefits__list {
@@ -18,22 +29,52 @@ color: var(--white-text-color);
     padding: 51px 20px 20px;
     background-color: var(--main-body-background-color);
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+
+    @media screen and(min-width: 768px) {
+      padding: 71px 112px 71px 60px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 44px;
+    }
+
+    @media screen and (min-width: 1680px) {
+      gap: 113px;
+    }
 }
 
 
 .benefits__item{
     position: relative;
-    @include font(14px, 700, 20px);
+    @media screen and(min-width: 768px) {
+      flex-basis: calc((100% - 44px) / 2);
+      max-width: 236px;
+    }
 
-&::before {
+    @media screen and (min-width: 1680px) {
+      flex-basis: calc((100% - 226px) / 3);
+      max-width: 356px;
+    }
+    
+   
+
+ &::before {
     counter-increment: benefits__item;
     content:"\2501"" 0" counter(benefits__item);
     color: var(--accent-color);
     position: absolute;
-    top: 0;
+    top: -8px;
     left: 0;
-    transform: translateY(-100%);
+    transform: translateY(-50%);
+    @include font(14px, 700, 23px);
+
+
+    @media screen and (min-width: 1680px) {
+      @include font(20px, 700, 33px);
+      
+    }
   }    
+
+ 
 } 
 
 
@@ -42,5 +83,7 @@ color: var(--white-text-color);
     margin-bottom: 71px;
 }
 
-
+.benefits__text{
+  @include font(14px, 700, 20px);
+}
 
