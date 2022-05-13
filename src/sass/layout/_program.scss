@@ -1,7 +1,23 @@
 .program {
+  position: relative;
   padding-top: 40px;
+  padding-bottom: 145px;
   background-color: var(--dark-text-color);
   margin-bottom: 0;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-image: url('/images/our-program-img/program-img.png');
+    opacity: 0.5;
+    background-size: auto;
+    width: 150px;
+    height: 137px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translateY(-40px);
+  }
 }
 
 .program-container {
@@ -69,7 +85,7 @@
 }
 
 .program-list__item {
-  &:not(last-child) {
+  &:not(:last-child) {
     margin-bottom: 10px;
   }
 }
