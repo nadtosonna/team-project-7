@@ -21,7 +21,8 @@
             }
         }
 
-    @media screen and (min-width:1366px) {
+    @media screen and (min-width:1680px) {
+        padding: 80px 0;
         background-image: linear-gradient(to right, rgba(17, 21, 24, 0.8), rgba(17, 21, 24, 0.8)), url('../images/registration-bg-img/registration-bg-img@1x-desktop.jpg');
 
         @media (min-device-pixel-ratio: 2),
@@ -39,6 +40,14 @@
     letter-spacing: 0.03em;
     color: var(--white-text-color);
     @include font(14px, 800, 18px);
+
+    @media screen and (min-width: 768px) {
+        @include font(26px, 800, 34px);
+    }
+    @media screen and (min-width: 1680px) {
+        max-width: 1100px;
+        @include font(46px, 800, 60px);
+    }
 }
 .contacts__header-accent {
     color: var(--accent-color);
@@ -49,6 +58,14 @@
     color: var(--white-text-color);
     letter-spacing: 0.08em;
     @include font(12px, 600, 15px);
+
+    @media screen and (min-width: 768px) {
+        @include font(14px, 600, 17px);
+    }
+        
+    @media screen and (min-width: 1680px) {
+        @include font(30px, 600, 37px);
+    }
 }
 .contacts__form-input {
     width: 100%;
@@ -72,7 +89,7 @@
     @media screen and (min-width: 768px) {
         max-width: 336px;
     }
-    @media screen and (min-width: 1366px) {
+    @media screen and (min-width: 1680px) {
         max-width: 528px;
     }
 }
@@ -94,6 +111,7 @@
 }
 .contacts__form-button {
     display: inline-block;
+    width: 100%;
     margin-top: 40px;
     min-height: 48px;
     background-color: var(--accent-color);
@@ -104,9 +122,19 @@
     @include font (14px, 700, 17px);
     cursor: pointer;
 
-    @media screen and (min-width: 480px) {
-        min-width: 280px;
+    &:hover, &:focus {
+        background-color: var(--white-text-color);
+        color: var(--accent-color);
+        border: 1px solid var(--accent-color);
     }
+
+    @media screen and (min-width: 768px) {
+        max-width: 336px;
+        }
+    
+    @media screen and (min-width: 1680px) {
+        max-width: 528px;
+        }
 }
 @media screen and (min-width:768px) {
     .contacts__form {
