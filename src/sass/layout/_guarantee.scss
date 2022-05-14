@@ -1,7 +1,7 @@
 .guarantee__title {
   text-align: center;
   letter-spacing: 0.03em;
-  color: #111518;
+  color: var(--dark-text-color);
 
   margin-bottom: 40px;
   @media screen and (max-width: 1679px) {
@@ -21,7 +21,7 @@
   @media screen and (min-width: 1680px) {
     padding: 60px 280px;
   }
-  background-color: #f1f1f1;
+  background-color: var(--light-body-background-color);
 
   display: flex;
   flex-direction: column;
@@ -40,7 +40,7 @@
       top: 18px;
       left: 1%;
       transform: translateX(-50%);
-      border-left: 1px dashed #b9b9b9;
+      border-left: 1px dashed var(--grey-text-color);
       height: 100%;
     }
   }
@@ -64,10 +64,10 @@
   @media screen and (min-width: 1680px) {
     @include font(20px, 500, 28px);
   }
-  color: #3d3d3d;
+  color: var(--dark-decorative-color);
   vertical-align: baseline;
 }
 .guarantee__star,
 .guarantee__accent-text {
-  color: #ff6b09;
+  color: var(--accent-color);
 }
