@@ -9,7 +9,11 @@
         padding: 40px 0;
     }
     @media screen and (min-width: 1680px) {
-      background-image: url('../images/fire.svg');
+     background-image: url('/src/images/fire.svg'),
+     linear-gradient(to bottom,
+    var(--dark-body-background-color) 72%,
+    var(--main-body-background-color) 28%
+    );
         padding: 80px 0;
        
     }
