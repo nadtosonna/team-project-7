@@ -1,6 +1,10 @@
-.reviews__name {
+.reviews {
   padding-top: 40px;
-  padding-bottom: 24px;
+  padding-bottom: 40px;
+}
+
+.reviews__name {
+  margin-bottom: 24px;
 
   font-family: var(--primary-font-family);
   font-style: normal;
@@ -14,7 +18,7 @@
 }
 
 .user-name {
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 
   font-family: var(--primary-font-family);
   font-style: normal;
@@ -28,7 +32,7 @@
 }
 
 .user-education {
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 
   font-family: var(--primary-font-family);
   font-style: normal;
@@ -42,8 +46,6 @@
 }
 
 .feed-back {
-  margin-bottom: 40px;
-
   font-family: var(--primary-font-family);
   font-style: normal;
   font-weight: 500;
@@ -61,11 +63,10 @@
 }
 
 .photo-set__wrapper {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  padding-bottom: 40px;
 }
 
 .arrow-btn {
@@ -77,7 +78,19 @@
   background-color: transparent;
 }
 
-@media screen and (max-width: 479px) {
+.user-card__wrapper {
+  text-align: center;
+}
+
+.user-card__image-wrapper {
+  margin-bottom: 24px;
+}
+
+.main-user-photo {
+  display: inline-block;
+}
+
+@media screen and (max-width: 767px) {
   .photo-set__item {
     &:nth-child(n + 4) {
       display: none;
@@ -95,17 +108,63 @@
   // .photo-set__item:not(:last-child) {
   //   margin-right: 12px;
   // }
+
+  .user-name__wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .user-card__arrow-btn {
+    display: none;
+  }
+
+  .user-card__wrapper {
+    margin-bottom: 24px;
+  }
 }
 
-.user-card__wrapper {
-  margin-bottom: 24px;
-}
+@media screen and (min-width: 768px) {
+  .user-card__feedback-wrapper {
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 
-.user-card__image-wrapper {
-  margin: 0 auto;
-  margin-bottom: 24px;
-}
+  .user-card__wrapper {
+    min-width: 150px;
+    margin-right: 44px;
+  }
 
-.social-link {
-  display: inline-block;
+  .user-card__image-wrapper {
+    margin-bottom: 20px;
+  }
+
+  .reviews__name {
+    margin-bottom: 40px;
+
+    font-size: 26px;
+  }
+
+  .user-name {
+    margin-bottom: 20px;
+
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  .user-education {
+    margin-bottom: 20px;
+  }
+
+  .photo-set__arrow-btn {
+    display: none;
+  }
+
+  .user-name__wrapper {
+    margin-right: 20px;
+  }
+
+  .user-card__arrow-btn.left {
+    margin-right: 20px;
+  }
 }
