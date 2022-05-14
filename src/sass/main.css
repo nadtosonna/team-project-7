@@ -1017,19 +1017,6 @@ body {
           align-items: center;
 }
 
-.photo-set__wrapper {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .arrow-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1057,12 +1044,42 @@ body {
   display: inline-block;
 }
 
+.social-link {
+  cursor: pointer;
+}
+
+.photo-set__item {
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 30%;
+}
+
+.photo-set__item:hover, .photo-set__item:focus {
+  border-color: var(--accent-color);
+}
+
+.photo-set_link:hover,
+.photo-set_link:focus {
+  border-color: var(--accent-color);
+}
+
 @media screen and (max-width: 767px) {
   .photo-set__item:nth-child(n + 4) {
     display: none;
   }
   .photo-set__item:nth-child(-n + 2) {
     margin-right: 12px;
+  }
+  .photo-set__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .user-name__wrapper {
     padding-left: 20px;
@@ -1073,6 +1090,9 @@ body {
   }
   .user-card__wrapper {
     margin-bottom: 24px;
+  }
+  .user-card__feedback-wrapper {
+    margin-bottom: 40px;
   }
 }
 
@@ -1111,6 +1131,57 @@ body {
   }
   .user-card__arrow-btn.left {
     margin-right: 20px;
+  }
+  .photo-set__item:not(:last-child) {
+    margin-right: 32px;
+  }
+  .user-card__feedback-wrapper {
+    margin-bottom: 20px;
+    background-color: var(--white-text-color);
+    -webkit-box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+            box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .container {
+    max-width: 1203px;
+  }
+  .reviews__name {
+    margin-bottom: 40px;
+    font-size: 46px;
+  }
+  .user-name {
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 1.23;
+  }
+  .user-education {
+    max-width: 482px;
+    font-size: 14px;
+    line-height: 1.21;
+    text-align: left;
+    color: var(--grey-text-color);
+  }
+  .feed-back {
+    max-width: 706px;
+    font-size: 18px;
+    line-height: 1.56;
+    text-align: left;
+  }
+  .user-card__wrapper {
+    margin-right: 40px;
+  }
+  .photo-set__item:not(:last-child) {
+    margin-right: 40px;
+  }
+  .user-card__feedback-wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .user-name {
+    text-align: left;
   }
 }
 
