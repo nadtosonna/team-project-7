@@ -122,10 +122,13 @@
     @include font (14px, 700, 17px);
     cursor: pointer;
 
+    transition: background-color 250ms var(--timing-function);
+
     &:hover, &:focus {
         background-color: var(--white-text-color);
         color: var(--accent-color);
         border: 1px solid var(--accent-color);
+        outline: none;
     }
 
     @media screen and (min-width: 768px) {
