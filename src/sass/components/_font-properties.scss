@@ -39,7 +39,7 @@
   color: var(--grey-text-color);
 }
 
-@media screen and (min-widht: 1680px) {
+@media screen and (min-width: 1680px) {
   .title {
     @include font(58px, 800, 75px);
   }
