@@ -13,7 +13,7 @@
         padding: 40px 0;
     }
     @media screen and (min-width: 1680px) {
-    background-image:url('../images/fire.svg'),
+    background-image:url('../images/fire-problems.svg'),
      linear-gradient(to bottom,
      var(--dark-body-background-color) 62%,
      var(--main-body-background-color) 38%)
@@ -54,7 +54,7 @@ color: var(--white-text-color);
     
     @media screen and (min-width: 1680px) {
         padding: 101px 192px 60px 156px;
-        gap: 101px 85px;
+        gap: 101px 223px;
     }
 }
 
@@ -68,7 +68,7 @@ color: var(--white-text-color);
       }
 
     @media screen and (min-width: 1680px) {
-        flex-basis: calc((100% - 170px) / 3);
+        flex-basis: calc((100% - 446px) / 3);
         max-width: 336px;
     }
 
