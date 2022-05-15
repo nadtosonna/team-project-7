@@ -3,7 +3,7 @@
   padding-bottom: 40px;
 }
 
-.reviews__name {
+.reviews-name {
   margin-bottom: 24px;
 
   font-family: var(--primary-font-family);
@@ -135,8 +135,8 @@
   }
 
   .user-name__wrapper {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 22px;
+    padding-right: 25px;
   }
 
   .user-card__arrow-btn {
@@ -156,6 +156,9 @@
   .user-card__feedback-wrapper {
     display: flex;
     padding: 40px 50px;
+    margin-bottom: 20px;
+    background-color: var(--white-text-color);
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
   }
 
   .container__wrapper {
@@ -181,7 +184,7 @@
     margin-bottom: 20px;
   }
 
-  .reviews__name {
+  .reviews-name {
     margin-bottom: 40px;
 
     font-size: 26px;
@@ -216,32 +219,35 @@
     margin-right: 32px;
   }
 
-  .user-card__feedback-wrapper {
-    margin-bottom: 20px;
-    background-color: var(--white-text-color);
-    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
-  }
-
   .feed-back {
     max-width: 706px;
     font-size: 12px;
     line-height: 1.67;
     text-align: left;
   }
+
+  .reviews-name__brake {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1680px) {
+  .reviews {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
   .reviews-container {
     max-width: 1233px;
   }
 
-  .reviews__name {
+  .reviews-name {
     margin-bottom: 40px;
     font-size: 46px;
   }
 
   .user-name {
-    margin-bottom: 20px;
+    margin-bottom: 8px;
     font-size: 30px;
     line-height: 1.23;
   }
@@ -271,5 +277,8 @@
 
   .user-card__feedback-wrapper {
     justify-content: center;
+    margin-bottom: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
