@@ -35,11 +35,12 @@
     background-position: center;
     background-size: cover;
     position: absolute;
+    background-color: var(--light-body-background-color);
     @media screen and (max-width: 1679.99px) {
       top: 0;
-      left: -5px;
-      height: 15px;
-      width: 10px;
+      left: -7px;
+      height: 20px;
+      width: 15px;
     }
     @media screen and (min-width: 1680px) {
       top: -5px;
