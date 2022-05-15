@@ -1,7 +1,7 @@
 <!-- Header-mobile -->
 <header class="header">
     <div class="container header-container">
-        <nav class="header-navigation">
+        
 
             <a class="header-logo" href="./index.html">
 
@@ -10,29 +10,68 @@
                 </svg>
 
             </a>
+        
 
-        </nav>
+        
+        <nav class="header-navigation">
+            <ul class="navigation-list">
+                <li class="navigation-link">
+                    <a href="" class="navigation-text">Studying program</a>
+                </li>
+                <li class="navigation-link">
+                    <a href="" class="navigation-text">about</a>
+                </li>
+                <li class="navigation-link">
+                    <a href="" class="navigation-text">training options</a>
+                </li>
+                <li class="navigation-link">
+                    <a href="" class="navigation-text">contacts</a>
+                </li>
+            </ul>
+        <button class="header-btn" type="button">
+            Consultation by phone
+        </button>
         <button type="button" class="modal-menu__open">
-            <svg class="burger" width="21" height="16">
+            <svg class="burger" width="21" height="12">
                 <use  href="./images/sprite.svg#icon-hamburger-menu"></use>
             </svg>
         </button>
+    </nav>
     </div>
     <div class="modal-menu is-hidden">
-        <!-- <div class="container modal-container"> -->
-            <div class="mobile-menu__top">
-                <a class="modal-logo" href="./index.html">
-                    <svg class="header-logo__icon" width="80" height="29">
-                        <use href="./images/sprite.svg#icon-logo-modal"></use>
-                    </svg>
-                </a>
+        <div class="modal-menu__container">
+<div class="mobile-menu__top">
+    <a class="modal-logo" href="./index.html">
+        <svg class="header-logo__icon" width="80" height="29">
+            <use href="./images/sprite.svg#icon-logo-modal"></use>
+        </svg>
+    </a>
+
+    <button type="button" class="modal-menu__close">
+        <svg width="16" height="16">
+            <use class="close-btn" href="./images/sprite.svg#icon-close"></use>
+        </svg>
+    </button>
+</div>
+<ul class="modal-menu__list">
+    <li class="modal-menu_link">
+        <a href="" class="modal-menu__text">Studying program</a>
+    </li>
+    <li class="modal-menu_link">
+        <a href="" class="modal-menu__text">About</a>
+    </li>
+    <li class="modal-menu_link">
+        <a href="" class="modal-menu__text">Training options</a>
+    </li>
+    <li class="modal-menu_link">
+        <a href="" class="modal-menu__text">Contacts</a>
+    </li>
+</ul>
+
+<button class="modal-menu__btn" type="button">
+    Consultation by phone
+</button>
+        </div>
             
-            <button type="button" class="modal-menu__close">
-                <svg width="16" height="16">
-                    <use class="close-btn" href="./images/sprite.svg#icon-close"></use>
-                </svg>
-            </button>
-            </div>
-        <!-- </div> -->
     </div>
 </header>

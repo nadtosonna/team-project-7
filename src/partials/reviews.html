@@ -1,82 +1,209 @@
-<section class="reviews section">
-    <div class="container">
-        <h2 class="reviews__name">Feedback from graduates</h2>
-        <div class="user-card__wrapper">
-            <div class="user-card__image-wrapper">
-                <img src="./images/graduate-main-img/graduate-main-img@1x-mobile.jpg" alt="user photo">
-            </div>
-            <a class="social-link" href="https://www.facebook.com/">
-                <svg class="social-link__icon" width="30" height="30">
-                    <use href="./images/sprite.svg#icon-facebook"></use>
-                </svg>
-            </a>
-        </div>
-        <h3 class="user-name">Tonya Kucherovskaya</h3>
-        <p class="user-education">Graduated from 2015, National University of Bioresources
-            and natural history of Ukraine</p>
-        <article class="feed-back">In a short time with Elena, I mastered grammar and replenished my completely empty
-            vocabulary.
-            From
-            the first lesson I
-            realized that I was on my plate. Elena and I became friends because she was really worried about my
-            success. She became
-            an authority for me, but I did not tremble in class, fearing to make the slightest mistake. Now I
-            can
-            brag that I'm
-            student ... Read more
-        </article>
-        <div class="photo-set">
+<section class="reviews">
+    <div class="container reviews-container">
+        <div class="container__wrapper">
+            <h2 class="reviews-name">Feedback from <br class="reviews-name__brake">graduates</h2>
+            <article class="article">
+                <div class="user-card__wrapper">
+                    <div class="user-card__image-wrapper">
+                        <picture>
+                            <source
+                                srcset="./images/graduate-main-img/graduate-main-img@1x-desktop.webp 1x, ./images/graduate-main-img/graduate-main-img@2x-desktop.webp 2x"
+                                media="(min-width: 1680px)" type="image/webp" />
+                            <source
+                                srcset="./images/graduate-main-img/graduate-main-img@1x-desktop.jpg 1x, ./images/graduate-main-img/graduate-main-img@2x-desktop.jpg 2x"
+                                media="(mix-width: 1680px)" />
+                            <source
+                                srcset="./images/graduate-main-img/graduate-main-img@1x-tablet.webp 1x, ./images/graduate-main-img/graduate-main-img@2x-tablet.webp 2x"
+                                media="(min-width: 768px)" type="image/webp" />
+                            <source
+                                srcset="./images/graduate-main-img/graduate-main-img@1x-tablet.jpg 1x, ./images/graduate-main-img/graduate-main-img@2x-tablet.jpg 2x"
+                                media="(mix-width: 768px)" />
+                            <source
+                                srcset="./images/graduate-main-img/graduate-main-img@1x-mobile.webp 1x, ./images/graduate-main-img/graduate-main-img@2x-mobile.webp 2x"
+                                media="(max-width: 767px)" type="image/webp" />
+                            <source
+                                srcset="./images/graduate-main-img/graduate-main-img@1x-mobile.jpg 1x, ./images/graduate-main-img/graduate-main-img@2x-mobile.jpg 2x"
+                                media="(max-width: 767px)" />
+                            <img class="main-user-photo"
+                                src="./images/graduate-main-img/graduate-main-img@1x-mobile.jpg" alt="user photo">
+                        </picture>
+                    </div>
+                    <a class="social-link" href="https://www.facebook.com/">
+                        <svg class="social-link__icon" width="30" height="30">
+                            <use href="./images/sprite.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="user-name__wrapper">
+                    <div class="feed-back">
+                        <h3 class="user-name">Tonya Kucherovskaya</h3>
+                        <p class="user-education">Graduated from 2015, National University of Bioresources
+                            and natural history of Ukraine
+                        </p>
+                        In a short time with Elena, I mastered grammar and replenished my completely
+                        empty
+                        vocabulary.
+                        From
+                        the first lesson I
+                        realized that I was on my plate. Elena and I became friends because she was really worried about
+                        my
+                        success. She became
+                        an authority for me, but I did not tremble in class, fearing to make the slightest mistake. Now
+                        I
+                        can
+                        brag that I'm
+                        student ... <button class="read-more" type="button">Read more</button>
+                    </div>
+                </div>
+            </article>
             <div class="photo-set__wrapper">
-                <button class="arrow-btn" type="button">
+                <ul class="photo-set__list">
+                    <li class="photo-set__item">
+                        <div class="photo__wrapper">
+                            <a class="photo-set_link" href="">
+                                <picture>
+                                    <source
+                                        srcset="./images/graduate-1st-img/graduate-1st-img@1x-gen.webp 1x, ./images/graduate-1st-img/graduate-1st-img@2x-gen.webp 2x"
+                                        media="(min-width: 1680px)" type="image/webp" />
+                                    <source
+                                        srcset="./images/graduate-1st-img/graduate-1st-img@1x-gen.jpg 1x, ./images/graduate-1st-img/graduate-1st-img@2x-gen.jpg 2x"
+                                        media="(mix-width: 1680px)" />
+                                    <source
+                                        srcset="./images/graduate-1st-img/graduate-1st-img@1x-gen.webp 1x, ./images/graduate-1st-img/graduate-1st-img@2x-gen.webp 2x"
+                                        media="(min-width: 768px)" type="image/webp" />
+                                    <source
+                                        srcset="./images/graduate-1st-img/graduate-1st-img@1x-gen.jpg 1x, ./images/graduate-1st-img/graduate-1st-img@2x-gen.jpg 2x"
+                                        media="(mix-width: 768px)" />
+                                    <source
+                                        srcset="./images/graduate-1st-img/graduate-1st-img@1x-gen.webp 1x, ./images/graduate-1st-img/graduate-1st-img@2x-gen.webp 2x"
+                                        media="(max-width: 767px)" type="image/webp" />
+                                    <source
+                                        srcset="./images/graduate-1st-img/graduate-1st-img@1x-gen.jpg 1x, ./images/graduate-1st-img/graduate-1st-img@2x-gen.jpg 2x"
+                                        media="(max-width: 767px)" />
+                                    <img src=" ./images/graduate-1st-img/graduate-1st-img@1x-gen.jpg"
+                                        alt="preview user photo 1" />
+                                </picture>
+
+                            </a>
+                        </div>
+                    </li>
+                    <li class="photo-set__item">
+                        <a class="photo-set__link" href="">
+                            <picture>
+                                <source
+                                    srcset="./images/graduate-2nd-img/graduate-2nd-img@1x-gen.webp 1x, ./images/graduate-2nd-img/graduate-2nd-img@2x-gen.webp 2x"
+                                    media="(min-width: 1680px)" type="image/webp" />
+                                <source
+                                    srcset="./images/graduate-2nd-img/graduate-2nd-img@1x-gen.jpg 1x, ./images/graduate-2nd-img/graduate-2nd-img@2x-gen.jpg 2x"
+                                    media="(mix-width: 1680px)" />
+                                <source
+                                    srcset="./images/graduate-2nd-img/graduate-2nd-img@1x-gen.webp 1x, ./images/graduate-2nd-img/graduate-2nd-img@2x-gen.webp 2x"
+                                    media="(min-width: 768px)" type="image/webp" />
+                                <source
+                                    srcset="./images/graduate-2nd-img/graduate-2nd-img@1x-gen.jpg 1x, ./images/graduate-2nd-img/graduate-2nd-img@2x-gen.jpg 2x"
+                                    media="(mix-width: 768px)" />
+                                <source
+                                    srcset="./images/graduate-2nd-img/graduate-2nd-img@1x-gen.webp 1x, ./images/graduate-2nd-img/graduate-2nd-img@2x-gen.webp 2x"
+                                    media="(max-width: 767px)" type="image/webp" />
+                                <source
+                                    srcset="./images/graduate-2nd-img/graduate-2nd-img@1x-gen.jpg 1x, ./images/graduate-2nd-img/graduate-2nd-img@2x-gen.jpg 2x"
+                                    media="(max-width: 767px)" />
+                                <img src="./images/graduate-2nd-img/graduate-2nd-img@1x-gen.jpg"
+                                    alt="preview user photo 1" />
+                            </picture>
+                        </a>
+                    </li>
+                    <li class="photo-set__item">
+                        <a class="photo-set__link" href="">
+                            <picture>
+                                <source
+                                    srcset="./images/graduate-3rd-img/graduate-3rd-img@1x-gen.webp 1x, ./images/graduate-3rd-img/graduate-3rd-img@2x-gen.webp 2x"
+                                    media="(min-width: 1680px)" type="image/webp" />
+                                <source
+                                    srcset="./images/graduate-3rd-img/graduate-3rd-img@1x-gen.jpg 1x, ./images/graduate-3rd-img/graduate-3rd-img@2x-gen.jpg 2x"
+                                    media="(mix-width: 1680px)" />
+                                <source
+                                    srcset="./images/graduate-3rd-img/graduate-3rd-img@1x-gen.webp 1x, ./images/graduate-3rd-img/graduate-3rd-img@2x-gen.webp 2x"
+                                    media="(min-width: 768px)" type="image/webp" />
+                                <source
+                                    srcset="./images/graduate-3rd-img/graduate-3rd-img@1x-gen.jpg 1x, ./images/graduate-3rd-img/graduate-3rd-img@2x-gen.jpg 2x"
+                                    media="(mix-width: 768px)" />
+                                <source
+                                    srcset="./images/graduate-3rd-img/graduate-3rd-img@1x-gen.webp 1x, ./images/graduate-3rd-img/graduate-3rd-img@2x-gen.webp 2x"
+                                    media="(max-width: 767px)" type="image/webp" />
+                                <source
+                                    srcset="./images/graduate-3rd-img/graduate-3rd-img@1x-gen.jpg 1x, ./images/graduate-3rd-img/graduate-3rd-img@2x-gen.jpg 2x"
+                                    media="(max-width: 767px)" />
+                                <img src="./images/graduate-3rd-img/graduate-3rd-img@1x-gen.jpg"
+                                    alt="preview user photo 1" />
+                            </picture>
+                        </a>
+                    </li>
+                    <li class="photo-set__item">
+                        <a class="photo-set__link" href="">
+                            <picture>
+                                <source
+                                    srcset="./images/graduate-4th-img/graduate-4th-img@1x-gen.webp 1x, ./images/graduate-4th-img/graduate-4th-img@2x-gen.webp 2x"
+                                    media="(min-width: 320px)" type="image/webp" />
+                                <source
+                                    srcset="./images/graduate-4th-img/graduate-4th-img@1x-gen.jpg 1x, ./images/graduate-4th-img/graduate-4th-img@2x-gen.jpg 2x"
+                                    media="(min-width: 320px)" />
+                                <img src="./images/graduate-4th-img/graduate-4th-img@1x-gen.jpg"
+                                    alt="preview user photo 1" />
+                            </picture>
+
+                        </a>
+                    </li>
+                    <li class="photo-set__item">
+                        <a class="photo-set__link" href="">
+                            <picture>
+                                <source
+                                    srcset="./images/graduate-5th-img/graduate-5th-img@1x-gen.webp 1x, ./images/graduate-5th-img/graduate-5th-img@2x-gen.webp 2x"
+                                    media="(min-width: 320px)" type="image/webp" />
+                                <source
+                                    srcset="./images/graduate-5th-img/graduate-5th-img@1x-gen.jpg 1x, ./images/graduate-5th-img/graduate-5th-img@2x-gen.jpg 2x"
+                                    media="(min-width: 320px)" />
+                                <img src="./images/graduate-5th-img/graduate-5th-img@1x-gen.jpg"
+                                    alt="preview user photo 1" />
+                            </picture>
+                        </a>
+                    </li>
+                    <li class="photo-set__item">
+                        <a class="photo-set__link" href="">
+                            <picture>
+                                <source
+                                    srcset="./images/graduate-6th-img/graduate-6th-img@1x-gen.webp 1x, ./images/graduate-6th-img/graduate-6th-img@2x-gen.webp 2x"
+                                    media="(min-width: 320px)" type="image/webp" />
+                                <source
+                                    srcset="./images/graduate-6th-img/graduate-6th-img@1x-gen.jpg 1x, ./images/graduate-6th-img/graduate-6th-img@2x-gen.jpg 2x"
+                                    media="(min-width: 320px)" />
+                                <img src="./images/graduate-6th-img/graduate-6th-img@1x-gen.jpg"
+                                    alt="preview user photo 1" />
+                            </picture>
+                        </a>
+                    </li>
+                    <li class="photo-set__item">
+                        <a class="photo-set__link" href="">
+                            <picture>
+                                <source
+                                    srcset="./images/graduate-7th-img/graduate-7th-img@1x-gen.webp 1x, ./images/graduate-7th-img/graduate-7th-img@2x-gen.webp 2x"
+                                    media="(min-width: 320px)" type="image/webp" />
+                                <source
+                                    srcset="./images/graduate-7th-img/graduate-7th-img@1x-gen.jpg 1x, ./images/graduate-7th-img/graduate-7th-img@2x-gen.jpg 2x"
+                                    media="(min-width: 320px)" />
+                                <img src="./images/graduate-7th-img/graduate-7th-img@1x-gen.jpg"
+                                    alt="preview user photo 1" />
+                            </picture>
+                        </a>
+                    </li>
+                </ul>
+                <button class="arrow-btn left" type="button">
                     <svg class="arrow-left-btn__icon" width="25" height="24">
                         <use href="./images/sprite.svg#icon-left-arrow"></use>
                     </svg>
                 </button>
-                <ul class="photo-set__list">
-                    <li class="photo-set__item">
-                        <a class="photo-set_link" href="">
-                            <img src="./images/graduate-1st-img/graduate-1st-img@1x-gen.jpg"
-                                alt="preview user photo 1" />
-                        </a>
-                    </li>
-                    <li class="photo-set__item">
-                        <a class="photo-set__link" href="">
-                            <img src="./images/graduate-2nd-img/graduate-2nd-img@1x-gen.jpg"
-                                alt="preview user photo 1" />
-                        </a>
-                    </li>
-                    <li class="photo-set__item">
-                        <a class="photo-set__link" href="">
-                            <img src="./images/graduate-3rd-img/graduate-3rd-img@1x-gen.jpg"
-                                alt="preview user photo 1" />
-                        </a>
-                    </li>
-                    <li class="photo-set__item">
-                        <a class="photo-set__link" href="">
-                            <img src="./images/graduate-4th-img/graduate-4th-img@1x-gen.jpg"
-                                alt="preview user photo 1" />
-                        </a>
-                    </li>
-                    <li class="photo-set__item">
-                        <a class="photo-set__link" href="">
-                            <img src="./images/graduate-5th-img/graduate-5th-img@1x-gen.jpg"
-                                alt="preview user photo 1" />
-                        </a>
-                    </li>
-                    <li class="photo-set__item">
-                        <a class="photo-set__link" href="">
-                            <img src="./images/graduate-6th-img/graduate-6th-img@1x-gen.jpg"
-                                alt="preview user photo 1" />
-                        </a>
-                    </li>
-                    <li class="photo-set__item">
-                        <a class="photo-set__link" href="">
-                            <img src="./images/graduate-7th-img/graduate-7th-img@1x-gen.jpg"
-                                alt="preview user photo 1" />
-                        </a>
-                    </li>
-                </ul>
-                <button class="arrow-btn" type="button">
+                <button class="arrow-btn right" type="button">
                     <svg class="arrow-left-btn__icon" width="25" height="24">
                         <use href="./images/sprite.svg#icon-right-arrow"></use>
                     </svg>
