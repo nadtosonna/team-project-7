@@ -1,4 +1,4 @@
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767.98px) {
         .header-btn {
             display: none;
         }
@@ -36,7 +36,8 @@
         stroke: #000000;
      }
      .modal-menu {
-         
+         display: flex;
+         flex-direction: column;
         position: fixed;
          background-color: rgba(17, 21, 24, 0.9);
          top: 0;
@@ -45,10 +46,9 @@
          z-index: 10;
          padding: 15px;
      }
-
+     
      .mobile-menu__top {
-        //  display: flex;
-        //  justify-content: space-between;
+        position: relative;
          margin-bottom: 40px;
      }
      
@@ -58,8 +58,8 @@
             
             border: 0px;
             position: absolute;
-            top: 10px;
-            right: 15px;
+            top: -5px;
+            right: -1px;
             // display: flex;
             // align-items: center;
             // justify-content: center;
@@ -76,7 +76,9 @@
      .modal-menu_link {
         @include font(20px, 800, 36px)
      } 
-         
+     
+      
+
     .modal-menu__btn {
         margin-top: 40px;
         border: 2px solid var(--accent-color);
@@ -95,14 +97,20 @@
 
         @include font(12px, 700, 15px)
         }
-        // @media screen and (min-width: 480px) {
-        //     .modal-menu__container {
-        //         // margin-right: auto;
-        //         // margin-left: auto;
-        //         width: 480px;
+
+        
+        @media screen and (min-width: 480px) {
+            .modal-menu__container {
                 
-        //     }
-        // }
+                margin-right: auto;
+                margin-left: auto;
+                padding-left: 15px;
+                padding-right: 15px;
+                width: 480px;
+                
+            }
+           
+        }
             
            @media screen and (min-width: 768px) {
             .header-logo__icon {
@@ -123,11 +131,28 @@
                     color: var(--accent-color);
                     text-transform: uppercase;
                     font-weight: 700;
-                    letter-spacing: 0.14em;    
-                    @include font(14px, 700, 17px)
-            }
-           }            
+                    letter-spacing: 0.14em; 
                     
+                    &:hover,
+                    &:focus {
+                        background-color: var(--accent-color);
+                        color: var(--main-body-background-color);
+                    }
+
+                    @include font(14px, 700, 17px)
+                }
+
+            .modal-menu__container {
+                width: 768px;
+
+            }
+            .modal-menu__btn {
+                display: none;
+            }
+
+           }            
+                  
+           
             
                     
                     
