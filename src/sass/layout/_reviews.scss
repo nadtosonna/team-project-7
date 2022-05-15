@@ -67,11 +67,23 @@
 }
 
 .user-card__image-wrapper {
+  display: inline;
   margin-bottom: 24px;
+  max-width: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.photo__wrapper {
+  width: 54px;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .main-user-photo {
   display: inline-block;
+  margin-bottom: 24px;
 }
 
 .social-link {
@@ -98,6 +110,15 @@
   position: absolute;
   padding: 0;
   border: 0;
+  background-color: transparent;
+}
+
+.read-more {
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  text-decoration: underline;
+  color: var(--accent-color);
   background-color: transparent;
 }
 
