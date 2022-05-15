@@ -9,10 +9,13 @@
         padding: 40px 0;
     }
     @media screen and (min-width: 1680px) {
-   /*  background-image: linear-gradient(to bottom,
-     var(--dark-body-background-color) 72%,
-     var(--main-body-background-color) 28%
-     ),url('../../images/fire.svg');*/
+    background-image:url('../images/fire.svg'),
+     linear-gradient(to bottom,
+     var(--dark-body-background-color) 62%,
+     var(--main-body-background-color) 38%)
+     ;
+     background-repeat: no-repeat;
+     background-position: right 10% top 10%;
      padding: 80px 0;
     }
 }
@@ -41,7 +44,7 @@ color: var(--white-text-color);
     @media screen and (min-width: 768px){
         display: flex;
         flex-wrap: wrap;
-        gap: 52px 48px; 
+        gap: 52px 80px; 
         padding: 60px 80px;
     } 
     
