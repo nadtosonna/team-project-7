@@ -1,16 +1,32 @@
-  .is-hidden {
+    @media screen and (max-width: 767.98px) {
+        
+        .header-btn {
+            display: none;
+        }
+    }
+    @media screen and (max-width: 1679.98px) {
+    .navigation-list {
+        display: none;
+    }
+    }
+   
+    .is-hidden {
       visibility: hidden;
       opacity: 0;
       pointer-events: none;
   }
 
+    .header-navigation {
+        display: flex;
+        margin-left: auto;
+    }
 
      .header-container {
          display: flex;
         
          align-items: center;
 
-         padding: 20px;
+         padding: 15px;
      }
 
      .modal-menu__open {
@@ -18,35 +34,188 @@
          background-color: transparent;
          border: none;
          padding: 0;
-         margin-top: 7px;
+         
         
      }
      .burger {
         stroke: #000000;
      }
      .modal-menu {
-        
-         
-         position: fixed;
+         display: flex;
+         flex-direction: column;
+        position: fixed;
          background-color: rgba(17, 21, 24, 0.9);
          top: 0;
          width: 100vw;
          height: 100vh;
          z-index: 10;
-         padding: 20px;
+         padding: 15px;
      }
      
+     .mobile-menu__top {
+        position: relative;
+         margin-bottom: 40px;
+     }
+     
+     .mobile-menu__top {
+        display: flex;
+        justify-content: space-between;
+    }
+
      .modal-menu__close {
             padding: 0;
             background-color: transparent;
             
             border: 0px;
-            position: absolute;
-            top: 20px;
-            right: 20px;
+            // position: absolute;
+            // top: -5px;
+            // right: -1px;
             // display: flex;
             // align-items: center;
             // justify-content: center;
      }
+     .modal-menu__text{
+        color: var(--main-body-background-color);
+
+        &:focus,
+            &:hover {
+                color: var(--accent-color);
+            }
+        }
      
-   
+     .modal-menu_link {
+        letter-spacing: 0.03em;
+        @include font(20px, 800, 36px)
+     } 
+     
+      
+
+    .modal-menu__btn {
+        margin-top: 40px;
+        border: 2px solid var(--accent-color);
+        background: transparent;
+        text-align: center;
+        width: 100%;
+        height: 48.53px;
+        color: var(--accent-color);
+        text-transform: uppercase;
+
+        &:focus,
+        &:hover {
+            color: var(--main-body-background-color);
+            background-color: var(--accent-color);
+        }
+
+        @include font(12px, 700, 15px)
+        }
+
+        
+        @media screen and (min-width: 480px) {
+            .modal-menu__container {
+                
+                margin-right: auto;
+                margin-left: auto;
+                padding-left: 15px;
+                padding-right: 15px;
+                width: 480px;
+                
+            }
+           
+        }
+            
+           @media screen and (min-width: 768px) {
+            
+            .header-logo__icon {
+                width: 125px;
+                height: 45px;
+            }
+            .modal-menu__open {}
+
+            .header-btn {
+                margin-right: 40px;
+                margin-left: auto;
+                width: 260px;
+                    height: 48px;
+                    padding: 15px 5px;
+                    border: 2px solid var(--accent-color);
+                    background: transparent;
+                    text-align: center;
+                    color: var(--accent-color);
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    letter-spacing: 0.14em; 
+                    
+                    &:hover,
+                    &:focus {
+                        background-color: var(--accent-color);
+                        color: var(--main-body-background-color);
+                    }
+
+                    @include font(14px, 700, 17px)
+                }
+
+            .modal-menu__container {
+                width: 768px;
+
+            }
+            .modal-menu__btn {
+                display: none;
+            }
+
+            .modal-menu__list {
+                margin-top: 80px;
+                margin-left: 216px;
+            }
+
+            .modal-menu_link {
+                letter-spacing: 0.03em;
+                @include font(26px, 800, 46.8px)
+            }
+        }  
+            
+        @media screen and (min-width: 1680px) {
+            .header-logo__icon{
+                width: 128px;
+                height: 45px;
+            }
+            .modal-menu__open{
+                display: none;
+            }
+            .header-btn {
+                margin-right: 0;
+            }
+
+            .navigation-list {
+                display: flex;
+                align-items: center;
+                text-align: center;
+              
+            }
+           
+            .navigation-link {
+                margin-right: 40px;
+                
+            }
+
+            .navigation-link {
+                text-transform: uppercase;
+                @include font(14px, 700, 17.07px)
+
+            }
+
+            .navigation-text {
+                color: var(--grey-text-color);
+                &:hover,
+                    &:focus {
+                        color: var(--accent-color);
+                    }
+            }
+
+        }
+                     
+                  
+           
+            
+                    
+                    
+
