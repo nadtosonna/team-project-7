@@ -3,7 +3,7 @@
   padding-bottom: 40px;
 }
 
-.reviews__name {
+.reviews-name {
   margin-bottom: 24px;
 
   font-family: var(--primary-font-family);
@@ -62,25 +62,28 @@
   align-items: center;
 }
 
-.arrow-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  border: 0;
-  background-color: transparent;
-}
-
 .user-card__wrapper {
   text-align: center;
 }
 
 .user-card__image-wrapper {
+  display: inline;
   margin-bottom: 24px;
+  max-width: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.photo__wrapper {
+  width: 54px;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .main-user-photo {
   display: inline-block;
+  margin-bottom: 24px;
 }
 
 .social-link {
@@ -103,7 +106,23 @@
   border-color: var(--accent-color);
 }
 
-@media screen and (max-width: 767px) {
+.arrow-btn {
+  position: absolute;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+.read-more {
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  text-decoration: underline;
+  color: var(--accent-color);
+  background-color: transparent;
+}
+
+@media screen and (max-width: 479px) {
   .photo-set__item {
     &:nth-child(n + 4) {
       display: none;
@@ -113,7 +132,21 @@
       margin-right: 12px;
     }
   }
+}
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .photo-set__item {
+    &:nth-child(n + 6) {
+      display: none;
+    }
+
+    &:nth-child(-n + 4) {
+      margin-right: 12px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
   // .photo-set__item:nth-child(n + 4) {
   //   display: none;
   // }
@@ -122,15 +155,23 @@
   //   margin-right: 12px;
   // }
 
+  .arrow-btn.left {
+    left: 15px;
+  }
+
+  .arrow-btn.right {
+    right: 15px;
+  }
+
   .photo-set__wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
   }
 
   .user-name__wrapper {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 22px;
+    padding-right: 25px;
   }
 
   .user-card__arrow-btn {
@@ -141,16 +182,33 @@
     margin-bottom: 24px;
   }
 
-  .user-card__feedback-wrapper {
+  .article {
     margin-bottom: 40px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .user-card__feedback-wrapper {
+  .article {
     display: flex;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    justify-content: center;
+    padding: 40px 50px;
+    margin-bottom: 20px;
+    background-color: var(--white-text-color);
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+  }
+
+  .container__wrapper {
+    position: relative;
+  }
+
+  .arrow-btn.left {
+    top: 50%;
+    left: 0;
+  }
+
+  .arrow-btn.right {
+    top: 50%;
+    right: 0;
   }
 
   .user-card__wrapper {
@@ -162,7 +220,7 @@
     margin-bottom: 20px;
   }
 
-  .reviews__name {
+  .reviews-name {
     margin-bottom: 40px;
 
     font-size: 26px;
@@ -171,12 +229,14 @@
   .user-name {
     margin-bottom: 20px;
 
-    font-size: 14px;
+    font-size: 20px;
     line-height: 1.2;
+    text-align: left;
   }
 
   .user-education {
     margin-bottom: 20px;
+    text-align: left;
   }
 
   .photo-set__arrow-btn {
@@ -195,22 +255,35 @@
     margin-right: 32px;
   }
 
-  .user-card__feedback-wrapper {
-    margin-bottom: 20px;
-    background-color: var(--white-text-color);
-    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+  .feed-back {
+    max-width: 706px;
+    font-size: 12px;
+    line-height: 1.67;
+    text-align: left;
+  }
+
+  .reviews-name__brake {
+    display: none;
   }
 }
 
 @media screen and (min-width: 1680px) {
+  .reviews {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 
-  .reviews__name {
+  .reviews-container {
+    max-width: 1233px;
+  }
+
+  .reviews-name {
     margin-bottom: 40px;
     font-size: 46px;
   }
 
   .user-name {
-    margin-bottom: 20px;
+    margin-bottom: 8px;
     font-size: 30px;
     line-height: 1.23;
   }
@@ -238,11 +311,13 @@
     margin-right: 40px;
   }
 
-  .user-card__feedback-wrapper {
-    justify-content: center;
-  }
+  .article {
+    max-width: 1088px;
+    margin-left: auto;
+    margin: auto;
 
-  .user-name {
-    text-align: left;
+    margin-bottom: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
