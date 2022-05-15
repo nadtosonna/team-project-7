@@ -17,24 +17,33 @@
     background-color: var(--dark-body-background-color);
 }
 
-.footer__logo {
-    margin-bottom: 20px;
-}
+@media screen and (max-width: 767px) {
+    .logo-mobile {
+        margin-bottom: 20px;
+    }
+
+    .logo {
+        display: none;
+    }
 
 .footer__tel {
     display: flex;
     align-items: center;
-    
-    margin-bottom: 20px;
     font-weight: 600;
     font-size: 14px;
     line-height: 1.21;
     letter-spacing: 0.08em;
     color: var(--dark-text-color);
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 20px;
+    }
 }
 
 .footer__icon-phone {
     margin-right: 8px;
+    width: 20px;
+    height: 19px;
 }
 
 .footer__social-link {
@@ -49,4 +58,106 @@
     font-size: 14px;
     line-height: 2;
     color: var(--grey-text-color);
+}
+
+// ================== 768+ ==================
+
+@media screen and (min-width: 768px) {
+
+    .footer__bg-light {
+        text-align: left;
+    }
+
+    .container__bg-light {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo-mobile {
+        display: none;
+    }
+
+    .logo {
+        font-weight: 800;
+        font-size: 26px;
+        line-height: 1.23;
+        letter-spacing: 0.04em;
+        color: var(--dark-text-color);
+    }
+
+    .logo__title {
+        display: flex;
+        margin-bottom: 3px;
+    }
+
+    .logo__icon {
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+
+    .logo__subscription {
+        margin-left: 2px;
+        font-weight: 700;
+        font-size: 8px;
+        line-height: 1.25;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+    }
+
+    .logo__subscription_accent {
+        color: var(--accent-color);
+    }
+
+    .footer__right-side {
+        display: flex;
+        align-items: center;
+    }
+
+    .footer__tel {
+        padding-right: 24px;
+        margin-right: 24px;
+        height: 40px;
+        font-size: 20px;
+        line-height: 1.2;
+        border-right: 1px solid var(--grey-text-color);
+    }
+
+    .footer__icon-phone {
+        width: 24px;
+        height: 23px;
+    }
+}
+
+// =================== 1680+ ===================
+
+@media screen and (min-width: 1680px) {
+
+    .footer__bg-light {
+        padding-top: 83px;
+        padding-bottom: 80px;
+    }
+
+    .container__bg-light {
+        justify-content: flex-start;
+    }
+
+    .logo {
+        margin-right: 452px;
+    }
+
+    .footer__tel {
+        font-size: 30px;
+        line-height: 1.23;
+    }
+
+    .footer__icon-phone {
+        margin-right: 16px;
+        width: 30px;
+        height: 29px;
+    }
+
+    .footer__bg-dark {
+        padding-top: 26px;
+        padding-bottom: 27px;
+    }
 }
