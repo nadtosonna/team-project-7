@@ -20,3 +20,23 @@
         outline: none;
     }
 }
+
+
+.hero-btn {
+   text-transform: uppercase;
+   margin-bottom: 40px;
+   cursor: pointer;  
+   width: 280px;
+   color: #FFFFFF;
+   background: #FF6B09;
+   border: #FF6B09;
+   transition: background-color 250ms var(--timing-function);
+    
+    &:hover,
+    &:focus {
+        background-color: var(--white-text-color);
+        color: var(--accent-color);
+        border: 1px solid var(--accent-color);
+        outline: none;
+    }
+}
