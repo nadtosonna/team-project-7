@@ -4,7 +4,7 @@
         }
     }
 
-
+   
     .is-hidden {
       visibility: hidden;
       opacity: 0;
@@ -52,14 +52,19 @@
          margin-bottom: 40px;
      }
      
+     .mobile-menu__top {
+        display: flex;
+        justify-content: space-between;
+    }
+
      .modal-menu__close {
             padding: 0;
             background-color: transparent;
             
             border: 0px;
-            position: absolute;
-            top: -5px;
-            right: -1px;
+            // position: absolute;
+            // top: -5px;
+            // right: -1px;
             // display: flex;
             // align-items: center;
             // justify-content: center;
@@ -74,6 +79,7 @@
         }
      
      .modal-menu_link {
+        letter-spacing: 0.03em;
         @include font(20px, 800, 36px)
      } 
      
@@ -150,6 +156,17 @@
                 display: none;
             }
 
+            .modal-menu__list {
+                margin-top: 80px;
+                margin-left: 216px;
+            }
+
+            .modal-menu_link {
+                letter-spacing: 0.03em;
+                @include font(26px, 800, 46.8px)
+            }
+
+            
            }            
                   
            
