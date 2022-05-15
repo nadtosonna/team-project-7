@@ -1,14 +1,21 @@
+.advantages {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
 .advantages__item {
-    position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .advantages__item::before {
-display: inline-block;
-content: " ";
-background-repeat: no-repeat;
-background-size: contain;
-width: 59px;
-height: 60px;
+    display: inline-block;
+    margin-right: 12px;
+    content: " ";
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 59px;
+    height: 60px;
 }
 
 .advantages__item_female-student::before {
@@ -23,16 +30,76 @@ height: 60px;
     background-image: url('../images/advantages/insurance-mobile.svg');
 }
 
-.advantages__item:not(:last-child) {
-    margin-bottom: 24px;
+@media screen and (max-width:767.98px) {
+    .advantages__item:not(:last-child) {
+        margin-bottom: 24px;
+    }
 }
 
+
 .advantages__title {
-    position: absolute;
-    top: 7px;
-    left: 66px;
     font-size: 14px;
     line-height: 1.64; 
     letter-spacing: 0.08em;
     color: var(--dark-text-color);
+}
+
+// ============= 768+ =============
+
+@media screen and (min-width: 768px) {
+    
+    .advantages {
+        padding-bottom: 80px;
+    }
+
+    .advantages__list {
+        display: flex;
+        justify-content: center;
+        gap: 21px;
+    }
+
+    .advantages__title {
+        width: 153px;
+    }
+}
+
+// ================ 1680+ ================
+
+@media screen and (min-width: 1680px) {
+
+    .advantages__list {
+        justify-content: left;
+        gap: 460px;
+    }
+
+    .advantages__item {
+        position: relative;
+    }
+
+    .advantages__item::before {
+        width: 100px;
+        height: 102px;
+        margin: 0;
+    }
+
+    .advantages__item_female-student::before {
+        background-image: url('../images/advantages/female-student-desktop.svg');
+    }
+    
+    .advantages__item_learning::before {
+        background-image: url('../images/advantages/learning-desktop.svg');
+    }
+    
+    .advantages__item_insurance::before {
+        background-image: url('../images/advantages/insurance-desktop.svg');
+    }
+
+    .advantages__title {
+        position: absolute;
+        top: 18px;
+        left: 82px;
+        width: 366px;
+        font-size: 20px;
+        line-height: 1.65;
+        }
 }
