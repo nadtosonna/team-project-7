@@ -1,0 +1,29 @@
+/* for h1 */
+.title {
+  @include font(20px, 800, 26px);
+  letter-spacing: 0.03em;
+  color: var(--dark-text-color);
+}
+
+/* for h2 */
+.section-title {
+  @include font(20px, 800, 26px);
+  letter-spacing: 0.03em;
+}
+
+.section-title_theme_light {
+  color: var(--dark-text-color);
+}
+
+.section-title_theme_dark {
+  color: var(--white-text-color);
+}
+
+.deskription {
+}
+
+@media screen and (min-widht: 1680px) {
+  .title {
+    @include font(58px, 800, 75px);
+  }
+}
