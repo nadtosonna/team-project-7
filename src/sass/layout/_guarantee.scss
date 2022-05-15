@@ -49,12 +49,13 @@
     }
   }
 
-  &:not(:last-child) {
-    margin-bottom: 24px;
-  }
+  // &:not(:last-child) {
+  //   padding-bottom: 24px;
+  // }
 }
 .guarantee__text-block {
   border-left: 1px dashed var(--grey-text-color);
+  padding-bottom: 24px;
   @media screen and (max-width: 1679.99px) {
     padding-left: 15px;
   }
