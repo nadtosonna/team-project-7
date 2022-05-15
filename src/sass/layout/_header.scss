@@ -12,6 +12,7 @@
   }
 
     .header-navigation {
+        display: flex;
         margin-left: auto;
     }
 
@@ -28,7 +29,7 @@
          background-color: transparent;
          border: none;
          padding: 0;
-         margin-top: 7px;
+         
         
      }
      .burger {
@@ -104,22 +105,30 @@
         // }
             
            @media screen and (min-width: 768px) {
-            
+            .header-logo__icon {
+                width: 125px;
+                height: 45px;
+            }
             .modal-menu__open {}
 
             .header-btn {
-                
+                margin-right: 40px;
                 margin-left: auto;
                 width: 260px;
                     height: 48px;
-                
+                    padding: 15px 5px;
                     border: 2px solid var(--accent-color);
                     background: transparent;
                     text-align: center;
-                    width: 100%;
-                    height: 48.53px;
                     color: var(--accent-color);
                     text-transform: uppercase;
+                    font-weight: 700;
+                    letter-spacing: 0.14em;    
+                    @include font(14px, 700, 17px)
             }
-           }
+           }            
+                    
+            
+                    
+                    
 
