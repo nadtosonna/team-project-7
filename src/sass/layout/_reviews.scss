@@ -74,12 +74,12 @@
   overflow: hidden;
 }
 
-.photo__wrapper {
-  width: 54px;
-  height: 100%;
-  border-radius: 50%;
-  overflow: hidden;
-}
+// .photo__wrapper {
+//   width: 54px;
+//   height: 54px;
+//   border-radius: 50%;
+//   overflow: hidden;
+// }
 
 .main-user-photo {
   display: inline-block;
@@ -91,9 +91,12 @@
 }
 
 .photo-set__item {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  overflow: hidden;
   cursor: pointer;
   border: 2px solid transparent;
-  border-radius: 30%;
 
   &:hover,
   &:focus {
@@ -111,6 +114,9 @@
   padding: 0;
   border: 0;
   background-color: transparent;
+  cursor: pointer;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .read-more {
