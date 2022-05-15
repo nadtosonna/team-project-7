@@ -27,6 +27,11 @@
   }
 
   .footer__tel {
+    margin-bottom: 20px;
+  }
+}
+
+  .footer__tel {
     display: flex;
     align-items: center;
     font-weight: 600;
@@ -34,10 +39,6 @@
     line-height: 1.21;
     letter-spacing: 0.08em;
     color: var(--dark-text-color);
-
-    @media screen and (max-width: 767px) {
-      margin-bottom: 20px;
-    }
   }
 
   .footer__icon-phone {
@@ -59,7 +60,7 @@
     line-height: 2;
     color: var(--grey-text-color);
   }
-}
+
 // ================== 768+ ==================
 
 @media screen and (min-width: 768px) {
