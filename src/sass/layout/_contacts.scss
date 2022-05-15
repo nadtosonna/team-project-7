@@ -79,7 +79,7 @@
     outline: none;
     resize: none;
     cursor: pointer;
-    @include font(20px, 600, 24px);
+    @include font(14px, 600, 17px);
 
     &:focus-within {
             outline: none;
@@ -91,6 +91,7 @@
         max-width: 336px;
     }
     @media screen and (min-width: 1680px) {
+        @include font(20px, 600, 24px);
         max-width: 528px;
         height: 70px;
     }
