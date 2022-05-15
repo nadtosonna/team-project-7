@@ -12,8 +12,8 @@
   }
 }
 .guarantee__list {
-  @media screen and (max-width: 1679.99px) {
-    padding: 40px 20px;
+  @media screen and (max-width: 767.99px) {
+    padding: 40px 60px;
   }
   @media screen and (min-width: 768px) {
     padding: 32px 58px 32px 87px;
@@ -28,19 +28,42 @@
   align-items: baseline;
   position: relative;
 
-  &:not(:last-child) {
-    margin-bottom: 24px;
-    &::before {
-      content: '';
-      position: absolute;
-      vertical-align: baseline;
-      top: 17px;
-      left: 1%;
-      transform: translateX(-50%);
-      border-left: 1px dashed var(--grey-text-color);
-      height: 110%;
+  &::before {
+    content: '';
+    background-image: url('../images/fire.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    @media screen and (max-width: 1679.99px) {
+      top: 0;
+      left: -5px;
+      height: 15px;
+      width: 10px;
+    }
+    @media screen and (min-width: 1680px) {
+      top: -5px;
+      left: -10px;
+      height: 30px;
+      width: 22px;
     }
   }
+
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+.guarantee__text-block {
+  border-left: 1px dashed var(--grey-text-color);
+  @media screen and (max-width: 1679.99px) {
+    padding-left: 15px;
+  }
+  @media screen and (min-width: 1680px) {
+    padding-left: 23px;
+  }
+}
+.guarantee__last-text-block {
+  border-left: 0 dashed var(--grey-text-color);
 }
 .guarantee__icon-fire {
   @media screen and (max-width: 1679.99px) {
