@@ -19,11 +19,40 @@
   color: var(--white-text-color);
 }
 
+/* for h3 */
+.section-subtitle {
+  @include font(14px, 700, 20px);
+  letter-spacing: 0.08em;
+}
+
+.section-subtitle_theme_light {
+  color: var(--white-text-color);
+}
+
+.section-subtitle_theme_dark {
+  color: var(--dark-text-color);
+}
+/* for grey content */
 .deskription {
+  @include font(12px, 500, 20px);
+  letter-spacing: 0.08em;
+  color: var(--grey-text-color);
 }
 
 @media screen and (min-widht: 1680px) {
   .title {
     @include font(58px, 800, 75px);
+  }
+
+  .section-title {
+    @include font(46px, 800, 60px);
+  }
+
+  .section-subtitle {
+    @include font(20px, 500, 28px);
+  }
+
+  .deskription {
+    @include font(18px, 500, 28px);
   }
 }
