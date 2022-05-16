@@ -33,10 +33,14 @@
 }
 
 .footer__social-link {
-  display: inline-block;
-  background-image: url('../images/instagram.svg');
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-image: radial-gradient(circle at 25% 85%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 105%);
   width: 40px;
   height: 40px;
+  border-radius: 20%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .footer__copyright {
