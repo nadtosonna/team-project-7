@@ -1,0 +1,26 @@
+.logo {
+    @include font(26px, 800, 32px);
+    letter-spacing: 0.04em;
+    color: var(--dark-text-color);
+}
+
+.logo__title {
+    display: flex;
+    margin-bottom: 3px;
+}
+
+.logo__icon {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.logo__subscription {
+    margin-left: 2px;
+    @include font(8px, 700, 10px);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.logo__subscription_accent {
+    color: var(--accent-color);
+}

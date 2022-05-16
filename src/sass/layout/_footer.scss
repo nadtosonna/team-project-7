@@ -17,7 +17,39 @@
   background-color: var(--dark-body-background-color);
 }
 
+.footer__tel {
+  display: flex;
+  align-items: center;
+
+  @include font(14px, 600, 17px);
+  letter-spacing: 0.08em;
+  color: var(--dark-text-color);
+}
+
+.footer__icon-phone {
+  margin-right: 8px;
+  width: 20px;
+  height: 19px;
+}
+
+.footer__social-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-image: radial-gradient(circle at 25% 85%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 105%);
+  width: 40px;
+  height: 40px;
+  border-radius: 20%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.footer__copyright {
+  @include font(14px, 500, 28px);
+  color: var(--grey-text-color);
+}
+
 @media screen and (max-width: 767px) {
+
   .logo-mobile {
     margin-bottom: 20px;
   }
@@ -30,36 +62,6 @@
     margin-bottom: 20px;
   }
 }
-
-  .footer__tel {
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.21;
-    letter-spacing: 0.08em;
-    color: var(--dark-text-color);
-  }
-
-  .footer__icon-phone {
-    margin-right: 8px;
-    width: 20px;
-    height: 19px;
-  }
-
-  .footer__social-link {
-    display: inline-block;
-    background-image: url('../images/instagram.svg');
-    width: 40px;
-    height: 40px;
-  }
-
-  .footer__copyright {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 2;
-    color: var(--grey-text-color);
-  }
 
 // ================== 768+ ==================
 
@@ -77,37 +79,6 @@
     display: none;
   }
 
-  .logo {
-    font-weight: 800;
-    font-size: 26px;
-    line-height: 1.23;
-    letter-spacing: 0.04em;
-    color: var(--dark-text-color);
-  }
-
-  .logo__title {
-    display: flex;
-    margin-bottom: 3px;
-  }
-
-  .logo__icon {
-    margin-left: 4px;
-    margin-right: 4px;
-  }
-
-  .logo__subscription {
-    margin-left: 2px;
-    font-weight: 700;
-    font-size: 8px;
-    line-height: 1.25;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-  }
-
-  .logo__subscription_accent {
-    color: var(--accent-color);
-  }
-
   .footer__right-side {
     display: flex;
     align-items: center;
@@ -117,8 +88,7 @@
     padding-right: 24px;
     margin-right: 24px;
     height: 40px;
-    font-size: 20px;
-    line-height: 1.2;
+    @include font(20px, 600, 24px);
     border-right: 1px solid var(--grey-text-color);
   }
 
@@ -145,8 +115,7 @@
   }
 
   .footer__tel {
-    font-size: 30px;
-    line-height: 1.23;
+    @include font(30px, 600, 37px);
   }
 
   .footer__icon-phone {

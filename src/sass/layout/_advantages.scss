@@ -38,8 +38,8 @@
 
 
 .advantages__title {
-    font-size: 14px;
-    line-height: 1.64; 
+    
+    @include font(14px, 700, 23px);
     letter-spacing: 0.08em;
     color: var(--dark-text-color);
 }
@@ -99,7 +99,6 @@
         top: 18px;
         left: 82px;
         width: 366px;
-        font-size: 20px;
-        line-height: 1.65;
-        }
+        @include font(20px, 700, 33px)
+    }
 }
