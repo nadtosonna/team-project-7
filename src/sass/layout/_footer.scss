@@ -17,6 +17,33 @@
   background-color: var(--dark-body-background-color);
 }
 
+.footer__tel {
+  display: flex;
+  align-items: center;
+
+  @include font(14px, 600, 17px);
+  letter-spacing: 0.08em;
+  color: var(--dark-text-color);
+}
+
+.footer__icon-phone {
+  margin-right: 8px;
+  width: 20px;
+  height: 19px;
+}
+
+.footer__social-link {
+  display: inline-block;
+  background-image: url('../images/instagram.svg');
+  width: 40px;
+  height: 40px;
+}
+
+.footer__copyright {
+  @include font(14px, 500, 28px);
+  color: var(--grey-text-color);
+}
+
 @media screen and (max-width: 767px) {
 
   .logo-mobile {
@@ -32,33 +59,6 @@
   }
 }
 
-  .footer__tel {
-    display: flex;
-    align-items: center;
-
-    @include font(14px, 600, 17px);
-    letter-spacing: 0.08em;
-    color: var(--dark-text-color);
-  }
-
-  .footer__icon-phone {
-    margin-right: 8px;
-    width: 20px;
-    height: 19px;
-  }
-
-  .footer__social-link {
-    display: inline-block;
-    background-image: url('../images/instagram.svg');
-    width: 40px;
-    height: 40px;
-  }
-
-  .footer__copyright {
-    @include font(14px, 500, 28px);
-    color: var(--grey-text-color);
-  }
-
 // ================== 768+ ==================
 
 @media screen and (min-width: 768px) {
@@ -73,33 +73,6 @@
 
   .logo-mobile {
     display: none;
-  }
-
-  .logo {
-    @include font(26px, 800, 32px);
-    letter-spacing: 0.04em;
-    color: var(--dark-text-color);
-  }
-
-  .logo__title {
-    display: flex;
-    margin-bottom: 3px;
-  }
-
-  .logo__icon {
-    margin-left: 4px;
-    margin-right: 4px;
-  }
-
-  .logo__subscription {
-    margin-left: 2px;
-    @include font(8px, 700, 10px);
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-  }
-
-  .logo__subscription_accent {
-    color: var(--accent-color);
   }
 
   .footer__right-side {
