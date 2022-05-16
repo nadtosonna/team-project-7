@@ -1,6 +1,12 @@
-.container {
+.guarantee__container {
   padding-left: 0;
   padding-right: 0;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
 }
 .guarantee__title {
   text-align: center;
