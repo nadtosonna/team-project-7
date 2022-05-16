@@ -29,7 +29,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    padding: 32px 0px 20px;
 }
 .task-icon{
     fill: var(--accent-color);
@@ -40,16 +40,13 @@
         fill: var(--white-text-color);
     }
 }
-
 .wrap-task-text{
-    flex-grow: 1;
-    padding: 0px 4px 8px;
     text-align: center;
     letter-spacing: 0.08em; 
 }
 .task-title{
     position: relative;
-    margin-bottom: 40px;
+    padding-bottom: 40px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.43;
@@ -79,6 +76,7 @@
     }
 }
 .task-description{
+    padding: 0px 11px 25px;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.67;
@@ -92,9 +90,6 @@
 }
 
 @media screen and (max-width:767px) {
-    .container-how-do{
-        width: 280px;
-    }
     .task-list_item:not(:last-child){
         margin-bottom: 16px;
     }
@@ -104,14 +99,22 @@
     margin-top: -32px;
     margin-left: -32px;
     }
+    .task-title{
+    padding-bottom: 48px;
+    }
     .task-list_item{
+    height: 336px;
     flex-basis: calc((100% - 2*32px) / 2);
     margin-top: 32px;
     margin-left: 32px; 
     }
+    .wrap-task-icon{
+        padding: 40px 0px 32px;;
+    }
 }
 @media screen and (min-width: 1680px){
     .task-list_item{
+    height: 492px;
     flex-basis: calc((100% - 3*32px) / 3);
     }
     .title-theme-dark{
@@ -124,5 +127,11 @@
     .task-description{
         font-size: 18px;
         line-height: 1.56;
+    }
+    .wrap-task-icon{
+        padding: 90px 0px 32px;
+    }
+    .wrap-task-text{
+        padding: 32px 82px 90px;
     }
 }
