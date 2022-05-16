@@ -14,8 +14,10 @@
 .task-list{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .task-list_item{
+    width: 280px;
     background-color: var(--body-background-color);
     box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
     transition: background-color 250ms var(--timing-function);
