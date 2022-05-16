@@ -10,12 +10,14 @@
 .program__container {
   position: relative;
   &::after {
+    display: block;
     content: '';
     position: absolute;
     bottom: 0;
     right: 0;
     opacity: 0.5;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 }
 
@@ -77,9 +79,7 @@
     width: 150px;
     height: 137px;
     transform: translateY(105px);
-    @media (min-dvice-pixel-retio: 1), (min-resolution: 96dpi), (min-resolution: 1dppx) {
-      background-image: url('/images/our-program-img/mobile-program-img.png');
-    }
+    background-image: url('/images/our-program-img/mobile-program-img.png');
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url('/images/our-program-img/mobile-program-img@2x.png');
     }
@@ -111,9 +111,7 @@
     width: 368px;
     height: 268px;
     transform: translateY(100px);
-    @media (min-dvice-pixel-retio: 1), (min-resolution: 96dpi), (min-resolution: 1dppx) {
-      background-image: url('../images/our-program-img/tablet-program-img.png');
-    }
+    background-image: url('../images/our-program-img/tablet-program-img.png');
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url('../images/our-program-img/tablet-program-img@2x.png');
     }
@@ -174,12 +172,9 @@
   .program__container::after {
     width: 684px;
     height: 510px;
-    bottom: 0;
     left: 0;
     transform: translateY(366px);
-    @media (min-dvice-pixel-retio: 1), (min-resolution: 96dpi), (min-resolution: 1dppx) {
-      background-image: url('/images/our-program-img/desktop-program-img.png');
-    }
+    background-image: url('/images/our-program-img/desktop-program-img.png');
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url('/images/our-program-img/desktop-program-img@2x.png');
     }

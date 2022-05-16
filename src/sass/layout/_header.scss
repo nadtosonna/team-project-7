@@ -51,7 +51,7 @@
 
      .modal-menu {
         
-        transition: opacity 500ms linear;
+        transition: opacity 250ms linear;
         
          
          display: flex;
@@ -90,11 +90,11 @@
      }
      .modal-menu__text{
         color: var(--main-body-background-color);
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: color 250ms var(--timing-function);
         &:focus,
             &:hover {
                 color: var(--accent-color);
-                transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                transition: color 250ms var(--timing-function);
             }
         }
      
@@ -114,13 +114,13 @@
         height: 48.53px;
         color: var(--accent-color);
         text-transform: uppercase;
-        transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: all 250ms var(--timing-function);
         
         &:focus,
         &:hover {
             color: var(--main-body-background-color);
             background-color: var(--accent-color);
-            transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            transition: all 250ms var(--timing-function);
             
         }
 
@@ -160,7 +160,7 @@
                 width: 125px;
                 height: 45px;
             }
-            .modal-menu__open {}
+            // .modal-menu__open {}
 
             .header-btn {
                 margin-right: 40px;
@@ -175,13 +175,14 @@
                     text-transform: uppercase;
                     font-weight: 700;
                     letter-spacing: 0.14em; 
-                    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                    cursor: pointer;
+                    transition: all 250ms var(--timing-function);
                     
                     &:hover,
                     &:focus {
                         background-color: var(--accent-color);
                         color: var(--main-body-background-color);
-                        transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                        transition: all 250ms var(--timing-function);
                         
                     }
 
@@ -239,22 +240,14 @@
 
             .navigation-text {
                 color: var(--grey-text-color);
-                transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                transition: color 250ms var(--timing-function);
                 
                 &:hover,
                     &:focus {
                         color: var(--accent-color);
-                        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                        transition: color 250ms var(--timing-function);
                     }
             }
           }   
             
-
-       
-                     
-                  
-           
-            
-                    
-                    
 
