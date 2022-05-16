@@ -1,16 +1,21 @@
-.contacts__form-button {
+%btn {
     display: inline-block;
-    width: 100%;
-    min-height: 48px;
     background-color: var(--accent-color);
     color: var(--white-text-color);
     letter-spacing: 0.08em;
     text-transform: uppercase;
     border: none;
-    @include font (14px, 700, 17px);
     cursor: pointer;
-
+            
     transition: background-color 250ms var(--timing-function);
+}
+
+
+.contacts__form-button {
+    @extend %btn;
+    width: 100%;
+    min-height: 48px;
+    @include font (12px, 700, 15px);
 
     &:hover,
     &:focus {
@@ -19,18 +24,17 @@
         border: 1px solid var(--accent-color);
         outline: none;
     }
+
+    @media screen and (min-width:1680px) {
+    @include font (14px, 700, 17px);
+    }
 }
 
 
 .hero-btn {
-   text-transform: uppercase;
-   margin-bottom: 40px;
-   cursor: pointer;  
-   width: 280px;
-   color: #FFFFFF;
-   background: #FF6B09;
-   border: #FF6B09;
-   transition: background-color 250ms var(--timing-function);
+    @extend %btn; 
+    width: 100%;
+    @include font (12px, 700, 15px);
     
     &:hover,
     &:focus {
@@ -39,4 +43,18 @@
         border: 1px solid var(--accent-color);
         outline: none;
     }
+
+        @media screen and (min-width:480px) {
+            max-width: 280px;
+        }
+
+        @media screen and (max-width:767px) {
+            max-width: 260px;
+        }
+
+
+        @media screen and (min-width:1680px) {
+            max-width: 354px;
+            @include font (14px, 700, 17px);
+        }
 }

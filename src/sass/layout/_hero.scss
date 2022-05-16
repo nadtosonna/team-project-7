@@ -4,43 +4,33 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-}
+    background-position: 0 bottom;
 
-@media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    .hero {
-        background-image:url('../images/hero-bg-img/hero-bg-img@2x-mobile.png');
-    }
-}
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: url('../images/hero-bg-img/hero-bg-img@2x-mobile.png');
+        }
 
-@media screen and (min-width:768px) {
-    .hero {
-        background-image: url('../images/hero-bg-img/hero-bg-img@1x-tablet.png');
-    }
-}
+    @media screen and (min-width:768px) {
+            background-image: url('../images/hero-bg-img/hero-bg-img@1x-tablet.png');
+        }
+            
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: url('../images/hero-bg-img/hero-bg-img@2x-tablet.png');
+                        }
 
-@media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-    .hero {
-         background-image: url('../images/hero-bg-img/hero-bg-img@2x-tablet.png');
-    }
-}
-
-@media screen and (min-width:1680px) {
-    .hero {
-        background-position: 0 bottom;
-        background-image: url('../images/hero-bg-img/hero-bg-img@1x-desktop.png');
-    }
-}
+        @media screen and (min-width:1680px) {
+                background-image: url('../images/hero-bg-img/hero-bg-img@1x-desktop.png');
+        }
     
-@media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    .hero {
-        background-image: url('../images/hero-bg-img/hero-bg-img@2x-desktop.png');
-    }
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+                background-image: url('../images/hero-bg-img/hero-bg-img@2x-desktop.png');
+            }
 }
 
 .hero-title {
@@ -83,8 +73,6 @@ letter-spacing: 0.08em;
     margin-bottom: 40px;
 }
 
-
-
 img {
     display: inline;
 }
@@ -93,6 +81,9 @@ img {
     .hero {
         padding-top: 20px;
         padding-bottom: 60px;
+    }
+    .hero__content {
+        margin-bottom: 40px;
     }
 
     .hero-btn {
@@ -119,8 +110,6 @@ img {
     .hero-container {
         display: flex;
     }
-
-
 
     .hero-content {
         text-align: left;
