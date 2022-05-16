@@ -76,7 +76,6 @@
     }
 }
 .task-description{
-    padding: 0px 11px 25px;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.67;
@@ -93,6 +92,9 @@
     .task-list_item:not(:last-child){
         margin-bottom: 16px;
     }
+    .wrap-task-text{
+        padding: 0px 11px 25px;
+    }
 }
 @media screen and (min-width: 768px){
     .task-list{
@@ -101,6 +103,9 @@
     }
     .task-title{
     padding-bottom: 48px;
+    }
+    .wrap-task-text{
+        padding: 0px 14px;
     }
     .task-list_item{
     height: 336px;
