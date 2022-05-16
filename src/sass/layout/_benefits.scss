@@ -2,14 +2,14 @@
   max-width: 480px;
   margin-left: auto;
   margin-right: auto;
-    padding: 24px 0;
+    padding-top: 24px;
      color: --dark-text-color;
      
   
 
    @media screen and(min-width: 768px) {
     max-width: 768px;
-     padding: 0 0 40px;
+     padding: 0;
     background-image: linear-gradient(to bottom,
     var(--dark-body-background-color) 0 40%,
     var(--main-body-background-color) 40% 100% );
@@ -61,7 +61,7 @@ color: var(--white-text-color);
       padding: 71px 112px 60px 92px;
       display: flex;
       flex-wrap: wrap;
-      gap: 75px 40px;
+      gap: 75px 32px;
     }
 
     @media screen and (min-width: 1680px) {
@@ -75,7 +75,7 @@ color: var(--white-text-color);
     position: relative;
     @media screen and(min-width: 768px) {
       flex-basis: calc((100% - 32px) / 2);
-      max-width: 236px;
+     
     }
 
     @media screen and (min-width: 1680px) {
@@ -106,9 +106,12 @@ color: var(--white-text-color);
 } 
 
 
+@media screen and(max-width: 767px) {
+  
 
 .benefits__item:not(:last-child) {
     margin-bottom: 71px;
+}
 }
 
 .benefits__text{
