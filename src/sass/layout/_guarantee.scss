@@ -57,11 +57,12 @@
 .guarantee__text-block {
   border-left: 1px dashed var(--grey-text-color);
   padding-bottom: 24px;
-  @media screen and (max-width: 1679.99px) {
-    padding-left: 15px;
+  padding-left: 23px;
+  @media screen and (min-width: 768px) {
+    padding-left: 32px;
   }
   @media screen and (min-width: 1680px) {
-    padding-left: 23px;
+    padding-left: 41px;
   }
 }
 .guarantee__last-text-block {
