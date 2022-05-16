@@ -26,17 +26,23 @@
 }
 
 .section-subtitle_theme_light {
-  color: var(--white-text-color);
+  color: var(--dark-text-color);
 }
 
 .section-subtitle_theme_dark {
-  color: var(--dark-text-color);
+  color: var(--white-text-color);
 }
 /* for grey content */
-.deskription {
+.description {
   @include font(12px, 500, 20px);
   letter-spacing: 0.08em;
   color: var(--grey-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .section-title {
+    @include font(26px, 800, 34px);
+  }
 }
 
 @media screen and (min-width: 1680px) {
@@ -49,10 +55,10 @@
   }
 
   .section-subtitle {
-    @include font(20px, 500, 28px);
+    @include font(20px, 700, 28px);
   }
 
-  .deskription {
+  .description {
     @include font(18px, 500, 28px);
   }
 }
