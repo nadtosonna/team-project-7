@@ -18,29 +18,32 @@
     .hero {
         background-image: url('../images/hero-bg-img/hero-bg-img@1x-tablet.png');
     }
-}
 
-@media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-    .hero {
-         background-image: url('../images/hero-bg-img/hero-bg-img@2x-tablet.png');
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        .hero {
+            background-image: url('../images/hero-bg-img/hero-bg-img@2x-tablet.png');
+        }
     }
 }
+
+
 
 @media screen and (min-width:1680px) {
     .hero {
         background-image: url('../images/hero-bg-img/hero-bg-img@1x-desktop.png');
     }
-}
-    
-@media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    .hero {
-        background-image: url('../images/hero-bg-img/hero-bg-img@2x-desktop.png');
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            .hero {
+                background-image: url('../images/hero-bg-img/hero-bg-img@2x-desktop.png');
+            }
     }
 }
+    
+
 
 .hero-title {
     font-family: 'Montserrat';
