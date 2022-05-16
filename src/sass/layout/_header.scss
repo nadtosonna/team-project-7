@@ -41,6 +41,7 @@
         stroke: #000000;
      }
      .modal-menu {
+         
          display: flex;
          flex-direction: column;
         position: fixed;
@@ -67,9 +68,9 @@
             background-color: transparent;
             
             border: 0px;
-            // position: absolute;
-            // top: -5px;
-            // right: -1px;
+            position: absolute;
+            top: -5px;
+            right: -1px;
             // display: flex;
             // align-items: center;
             // justify-content: center;
@@ -112,12 +113,12 @@
         
         @media screen and (min-width: 480px) {
             .modal-menu__container {
-                
+                position: relative;
                 margin-right: auto;
                 margin-left: auto;
-                padding-left: 15px;
-                padding-right: 15px;
-                width: 480px;
+                // padding-left: 15px;
+                // padding-right: 15px;
+                width: 450px;
                 
             }
            
