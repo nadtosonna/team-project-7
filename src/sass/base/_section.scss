@@ -1,8 +1,22 @@
+section {
+  margin-left: auto;
+  margin-right: auto;
+}
 
-    @media screen and (min-width: 1680px) {
-        section {
-            max-width: 1680px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    }
+@media screen and (min-width: 480px) {
+  section {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  section {
+    width: 1680px;
+  }
+}
