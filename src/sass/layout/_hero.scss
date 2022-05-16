@@ -30,6 +30,7 @@
 
 @media screen and (min-width:1680px) {
     .hero {
+        background-position: 0 bottom;
         background-image: url('../images/hero-bg-img/hero-bg-img@1x-desktop.png');
     }
 }
@@ -137,7 +138,6 @@ img {
 @media screen and (max-width:1679.98px) {
     .hero-title {
         font-size: 26px;
-        width: 332px;
     }
 
     .hero-btn {
