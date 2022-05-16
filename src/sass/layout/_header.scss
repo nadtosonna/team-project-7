@@ -70,7 +70,7 @@
             border: 0px;
             position: absolute;
             top: -5px;
-            right: -1px;
+            right: 1px;
             // display: flex;
             // align-items: center;
             // justify-content: center;
@@ -126,6 +126,19 @@
             
            @media screen and (min-width: 768px) {
             
+            .modal-menu__close {
+                    padding: 0;
+                    background-color: transparent;
+            
+                    border: 0px;
+                    position: absolute;
+                    top: 15px;
+                    right: -8px;
+                    // display: flex;
+                    // align-items: center;
+                    // justify-content: center;
+                }
+
             .header-logo__icon {
                 width: 125px;
                 height: 45px;
@@ -156,8 +169,8 @@
                 }
 
             .modal-menu__container {
-                width: 768px;
-
+                width: 738px;
+                position: relative;
             }
             .modal-menu__btn {
                 display: none;
@@ -211,8 +224,10 @@
                         color: var(--accent-color);
                     }
             }
+          }   
+            
 
-        }
+       
                      
                   
            
