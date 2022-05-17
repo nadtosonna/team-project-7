@@ -108,8 +108,7 @@
 <path fill="#fff" style="fill: var(--color1, #fff)" d="M15.999 8.115c-4.355 0-7.885 3.53-7.885 7.885s3.531 7.885 7.885 7.885c4.355 0 7.885-3.53 7.885-7.885s-3.53-7.885-7.885-7.885zM15.999 21.17c-2.856 0-5.17-2.315-5.17-5.171s2.315-5.17 5.171-5.17c2.856 0 5.171 2.315 5.171 5.171s-2.315 5.171-5.171 5.171z"></path>
 <path fill="#fff" style="fill: var(--color1, #fff)" d="M26.222 7.755c0 1.036-0.84 1.876-1.876 1.876s-1.876-0.84-1.876-1.876c0-1.036 0.84-1.876 1.876-1.876s1.876 0.84 1.876 1.876z"></path>
 </symbol>
-<symbol id="icon-close-about" viewBox="0 0 32 32">
-<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="3.5556" d="M1.778 30.221l28.444-28.444"></path>
-<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="3.5556" d="M30.222 30.221l-28.444-28.444"></path>
+<symbol id="icon-close-black" viewBox="0 0 32 32">
+<path d="M32 3.223l-3.223-3.223-12.777 12.777-12.777-12.777-3.223 3.223 12.777 12.777-12.777 12.777 3.223 3.223 12.777-12.777 12.777 12.777 3.223-3.223-12.777-12.777 12.777-12.777z"></path>
 </symbol>
 </defs></svg>
