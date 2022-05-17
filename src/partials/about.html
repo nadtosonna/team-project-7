@@ -4,8 +4,8 @@
         <h2 class="about__title">Teacher</h2>
         <div class="about__wrapper">
                 <picture>
-                    <source media="(min-width: 1366px)" srcset="images/teacher-img/teacher-img@1x-desktop.webp 1x, images/teacher-img/teacher-img@2x-desktop.webp 2x" type="image/webp">
-                    <source srcset="images/teacher-img/teacher-img@1x-desktop.jpg 1x, images/teacher-img/teacher-img@2x-desktop.jpg 2x" media="(min-width: 1366px)">
+                    <source media="(min-width: 1680px)" srcset="images/teacher-img/teacher-img@1x-desktop.webp 1x, images/teacher-img/teacher-img@2x-desktop.webp 2x" type="image/webp">
+                    <source srcset="images/teacher-img/teacher-img@1x-desktop.jpg 1x, images/teacher-img/teacher-img@2x-desktop.jpg 2x" media="(min-width: 1680px)">
                     
                     <source media="(min-width: 768px)" srcset="images/teacher-img/teacher-img@1x-tablet.webp 1x, images/teacher-img/teacher-img@2x-tablet.webp 2x" type="image/webp">
                     <source srcset="images/teacher-img/teacher-img@1x-tablet.jpg 1x, images/teacher-img/teacher-img@2x-tablet.jpg 2x" media="(min-width: 768px)">
@@ -30,10 +30,37 @@
                     How to Write an Essay (Berkeley), Academic and Business Writing (Berkeley), The Art of Teaching (GEMS education), 
                     Powerful Tools for Teaching and Learning (University of Houston).</p>
                 </div>
-                <a class="about__link" href="https://en.wikipedia.org/wiki/Certificate_in_Teaching_English_to_Speakers_of_Other_Languages" target="_blank" rel="noopener noreferrer">Cambrige English Entry Level Certificate</a>
+
+                <button type="button" class="about__link" data-modal-open>
+                    Cambrige English Entry Level Certificate
+                </button>
+
+                <!-- <a class="about__link" href="https://en.wikipedia.org/wiki/Certificate_in_Teaching_English_to_Speakers_of_Other_Languages" target="_blank" rel="noopener noreferrer">Cambrige English Entry Level Certificate</a> -->
             </div>
         </div>
-        
-
     </div>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="about__modal">
+            <button class="about__close-btn" data-modal-close>
+                <svg class="about__close-icon">
+                    <use href="./images/sprite.svg#icon-close"></use>
+                </svg>
+            </button>
+            <picture>
+                <source media="(min-width: 1680px)" srcset="images/certificate/tablet.webp" type="image/webp">
+                <source srcset="images/certificate/tablet.jpg" media="(min-width: 1680px)">
+                
+                <!-- <source media="(min-width: 768px)" srcset="images/teacher-img/teacher-img@1x-tablet.webp 1x, images/teacher-img/teacher-img@2x-tablet.webp 2x" type="image/webp">
+                <source srcset="images/teacher-img/teacher-img@1x-tablet.jpg 1x, images/teacher-img/teacher-img@2x-tablet.jpg 2x" media="(min-width: 768px)"> -->
+    
+                <source media="(max-width: 1679px)" srcset="images/certificate/mobile.webp" type="image/webp">
+                <source srcset="images/certificate/mobile.jpg" media="(max-width: 1679px)">
+                  
+                <img class="about__modal-img" src="images/certificate/tablet.jpg" alt="Cambrige English Entry Level Certificate">
+            </picture>
+        </div>
+    </div>
+
 </section>
+
