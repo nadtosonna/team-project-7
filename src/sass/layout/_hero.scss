@@ -2,7 +2,7 @@
     display: flex;
     background-image:  url('../images/hero-bg-img/hero-bg-img@1x-mobile.png');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 0 85%;
     background-size: cover;
 }
 
@@ -28,8 +28,6 @@
     }
 }
 
-
-
 @media screen and (min-width:1680px) {
     .hero {
         background-image: url('../images/hero-bg-img/hero-bg-img@1x-desktop.png');
@@ -46,11 +44,8 @@
 
 
 .hero-title {
-    font-family: 'Montserrat';
+    @include font(58px, 800, 75px);
     font-style: normal;
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 130%;
     margin-bottom: 8px;
     
     color: var(--dark-body-background-color);  
