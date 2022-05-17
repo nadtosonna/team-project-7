@@ -122,6 +122,8 @@
   cursor: pointer;
   padding-top: 12px;
   padding-bottom: 12px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .read-more {
@@ -212,12 +214,16 @@
   //   margin-right: 12px;
   // }
 
+  .photo-set__wrapper {
+    position: relative;
+  }
+
   .arrow-btn.left {
-    left: 15px;
+    left: 0;
   }
 
   .arrow-btn.right {
-    right: 15px;
+    right: 0;
   }
 
   .photo-set__wrapper {
@@ -259,12 +265,10 @@
   }
 
   .arrow-btn.left {
-    top: 50%;
     left: 0;
   }
 
   .arrow-btn.right {
-    top: 50%;
     right: 0;
   }
 
