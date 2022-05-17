@@ -53,8 +53,8 @@
         
         transition: transform 500ms linear;
         
-         transform: translateY(-100%);
-        display: flex;
+         transform: translateY(0);
+            display: flex;
          flex-direction: column;
         position: fixed;
          background-color: rgba(17, 21, 24, 0.9);
@@ -68,7 +68,7 @@
                 //   visibility: hidden;
                 //   opacity: 0;
                 // pointer-events: none;
-                transform: translateY(0);
+                transform: translateY(-100%);
             }
      }
      
@@ -165,7 +165,9 @@
                 width: 125px;
                 height: 45px;
             }
-            .modal-menu__open {}
+            // .modal-menu__open {
+
+            // }
 
             .header-btn {
                 margin-right: 40px;
