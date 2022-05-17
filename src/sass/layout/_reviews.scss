@@ -138,6 +138,47 @@
   font-weight: 700;
 }
 
+.read-more-wrap {
+  display: inline;
+}
+
+.read-more-state {
+  display: none;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 10px;
+  overflow: auto;
+}
+.read-more-state:checked ~ .read-more-wrap .points {
+  display: none;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Read more';
+  display: inline;
+  transition: opacity 2500ms linear;
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Read less';
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  color: var(--accent-color);
+}
+
 @media screen and (max-width: 479px) {
   .photo-set__item {
     &:nth-child(n + 4) {
