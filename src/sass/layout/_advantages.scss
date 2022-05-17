@@ -36,7 +36,6 @@
     }
 }
 
-
 .advantages__title {
     
     @include font(14px, 700, 23px);
@@ -58,6 +57,9 @@
         gap: 21px;
     }
 
+}
+
+@media screen and (min-width: 768px) and (max-width: 1679px) {
     .advantages__title {
         width: 153px;
     }
@@ -69,11 +71,11 @@
 
     .advantages__list {
         justify-content: left;
-        gap: 460px;
+        gap: 112px;
     }
 
     .advantages__item {
-        position: relative;
+        width: 448px;
     }
 
     .advantages__item::before {
@@ -95,10 +97,7 @@
     }
 
     .advantages__title {
-        position: absolute;
-        top: 18px;
-        left: 82px;
-        width: 366px;
+        margin-left: -18px;
         @include font(20px, 700, 33px)
     }
 }
