@@ -51,10 +51,10 @@
 
      .modal-menu {
         
-        transition: opacity 250ms linear;
+        transition: opacity 250ms linear, visibility 250ms linear;
         
          
-         display: flex;
+        display: flex;
          flex-direction: column;
         position: fixed;
          background-color: rgba(17, 21, 24, 0.9);
