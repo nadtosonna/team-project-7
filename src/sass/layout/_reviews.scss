@@ -183,19 +183,13 @@
   .user-card__wrapper {
     margin-bottom: 24px;
   }
-
-  .article {
-    margin-bottom: 40px;
-  }
 }
 
 @media screen and (min-width: 768px) {
   .article {
     display: flex;
     justify-content: center;
-
     padding: 40px 66px;
-    margin-bottom: 20px;
   }
 
   .container__wrapper {
@@ -284,7 +278,6 @@
   }
 
   .article {
-    margin-bottom: 40px;
     padding-top: 60px;
     padding-bottom: 60px;
     padding-right: 111px;
