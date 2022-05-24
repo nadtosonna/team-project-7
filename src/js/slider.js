@@ -3,6 +3,7 @@ $(document).ready(function () {
     // slidesToShow: 1,
     // slidesToScroll: 1,
     arrows: false,
+    infinite: true,
     // fade: true,
     asNavFor: '.slider-nav',
     mobileFirst: true,
@@ -11,7 +12,7 @@ $(document).ready(function () {
       {
         breakpoint: 767,
         settings: {
-          infinite: false,
+          // infinite: false,
           // slidesToShow: 7,
           // centerMode: false,
           arrows: true,
